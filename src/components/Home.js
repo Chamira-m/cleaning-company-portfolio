@@ -62,16 +62,31 @@ const Home = () => {
     "/slides/slide3.jpg",
   ];
 
+  const sections = [
+    {
+      title: "High Quality Service",
+      description:
+        "We provide top-quality services at affordable prices to our customers in a wide range of areas.",
+    },
+    {
+      title: "Latest Cleaning Technologies",
+      description:
+        "We apply advanced cleaning technologies to maintain our high quality service to make our customers more satisfied.",
+    },
+    {
+      title: "Cost Benefits",
+      description:
+        "We use our own cleaning products and equipment to provide peace of mind for the clients and save money in the long run.",
+    },
+    {
+      title: "Expertise in the Field",
+      description:
+        "Nuga has a well-trained and experienced team who will assure a job well done and beyond expected.",
+    },
+  ];
+
   return (
     <div className="container mx-auto mt-10">
-      {/* <motion.h1
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 0.5 }}
-        className="text-4xl font-bold text-center my-8"
-      >
-        Welcome to CleaningCo
-      </motion.h1> */}
       <Slider {...settings}>
         {images.map((image, index) => (
           <div key={index} className="relative">
@@ -87,7 +102,7 @@ const Home = () => {
               <h1 className="2xl:text-5xl md:text-3xl 2xl:mt-10 md:mt-8 mt-5">
                 Cleaning Services
               </h1>
-              <div className="2xl:w-[800px] md:w-[600px] w-96 h-1 bg-white mt-4 mb-4" />
+              <div className="2xl:w-[800px] md:w-[600px] w-48 h-1 bg-white mt-4 mb-4" />
               <button
                 onClick={() => navigate("/contact")}
                 className="mt-4 px-6 py-2 bg-blue-500 text-white rounded-full shadow-md hover:bg-blue-700 transition duration-300"
@@ -98,6 +113,22 @@ const Home = () => {
           </div>
         ))}
       </Slider>
+      <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        {sections.map((section, index) => (
+          <motion.div
+            key={index}
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: index * 0.1 }}
+            className="p-6 bg-gray-800 text-white rounded-lg shadow-lg flex flex-col items-center"
+          >
+            <h2 className="text-2xl font-semibold mb-4 text-center">
+              {section.title}
+            </h2>
+            <p className="text-center">{section.description}</p>
+          </motion.div>
+        ))}
+      </div>
     </div>
   );
 };

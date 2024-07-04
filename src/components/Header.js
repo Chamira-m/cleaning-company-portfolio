@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
@@ -8,6 +8,12 @@ const headerVariants = {
 };
 
 const Header = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
   return (
     <motion.header
       variants={headerVariants}
@@ -19,7 +25,7 @@ const Header = () => {
         <div className="flex items-center">
           <img src="/logo.png" alt="Company Logo" className="mr-2" />
         </div>
-        <nav className="space-x-4">
+        <nav className="space-x-4 hidden md:block">
           <Link to="/" className="hover:text-dark-accent">
             Home
           </Link>
@@ -33,7 +39,49 @@ const Header = () => {
             Contact
           </Link>
         </nav>
+        <div className="md:hidden">
+          <img
+            src="/Hamburger.png"
+            alt="Hamburger Menu"
+            width={35}
+            height={35}
+            onClick={toggleMenu}
+            className="cursor-pointer"
+          />
+        </div>
       </div>
+      {menuOpen && (
+        <div className="md:hidden bg-gray-800 text-white p-4 mt-2">
+          <Link
+            to="/"
+            className="block py-2 hover:text-dark-accent"
+            onClick={toggleMenu}
+          >
+            Home
+          </Link>
+          <Link
+            to="/services"
+            className="block py-2 hover:text-dark-accent"
+            onClick={toggleMenu}
+          >
+            Services
+          </Link>
+          <Link
+            to="/about"
+            className="block py-2 hover:text-dark-accent"
+            onClick={toggleMenu}
+          >
+            About
+          </Link>
+          <Link
+            to="/contact"
+            className="block py-2 hover:text-dark-accent"
+            onClick={toggleMenu}
+          >
+            Contact
+          </Link>
+        </div>
+      )}
     </motion.header>
   );
 };

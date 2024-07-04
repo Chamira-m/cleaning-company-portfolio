@@ -21,7 +21,7 @@ const categories = [
 
 const About = () => {
   return (
-    <div className="container mx-auto p-4 flex flex-col lg:flex-row">
+    <div className="container mx-auto p-4 flex flex-col lg:flex-row 2xl:mt-16 lg:mt-10 md:mt-8 mt-8 mb-28">
       <motion.div
         initial={{ opacity: 0, x: -50 }}
         animate={{ opacity: 1, x: 0 }}

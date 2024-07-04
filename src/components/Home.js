@@ -86,7 +86,7 @@ const Home = () => {
   ];
 
   return (
-    <div className="container mx-auto mt-10">
+    <div className="container mx-auto 2xl:mt-28 lg:mt-20 md:mt-10 mt-24 mb-28">
       <Slider {...settings}>
         {images.map((image, index) => (
           <div key={index} className="relative">
@@ -103,12 +103,14 @@ const Home = () => {
                 Cleaning Services
               </h1>
               <div className="2xl:w-[800px] md:w-[600px] w-48 h-1 bg-white mt-4 mb-4" />
-              <button
+              <motion.button
                 onClick={() => navigate("/contact")}
-                className="mt-4 px-6 py-2 bg-blue-500 text-white rounded-full shadow-md hover:bg-blue-700 transition duration-300"
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+                className="mt-4 px-6 py-2 bg-blue-500 bg-opacity-80 text-white rounded-full shadow-md hover:bg-opacity-100 transition duration-300"
               >
                 Contact Us
-              </button>
+              </motion.button>
             </div>
           </div>
         ))}

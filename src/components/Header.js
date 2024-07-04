@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const headerVariants = {
   hidden: { opacity: 0, y: -50 },
@@ -8,6 +8,7 @@ const headerVariants = {
 };
 
 const Header = () => {
+  const navigate = useNavigate();
   const [menuOpen, setMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -19,12 +20,15 @@ const Header = () => {
       variants={headerVariants}
       initial="hidden"
       animate="visible"
-      className="bg-gray-900 text-white p-4"
+      className="bg-gray-900 text-white p-4 fixed top-0 left-0 right-0 z-50"
     >
       <div className="container mx-auto flex justify-between items-center">
-        <div className="flex items-center">
+        {/* Logo with Link to Home */}
+        <Link to="/" className="flex items-center">
           <img src="/logo.png" alt="Company Logo" className="mr-2" />
-        </div>
+        </Link>
+
+        {/* Desktop Navigation */}
         <nav className="space-x-4 hidden md:block">
           <Link to="/" className="hover:text-dark-accent">
             Home
@@ -39,6 +43,8 @@ const Header = () => {
             Contact
           </Link>
         </nav>
+
+        {/* Mobile Menu Toggle */}
         <div className="md:hidden">
           <img
             src="/Hamburger.png"
@@ -50,12 +56,17 @@ const Header = () => {
           />
         </div>
       </div>
+
+      {/* Mobile Menu */}
       {menuOpen && (
         <div className="md:hidden bg-gray-800 text-white p-4 mt-2">
           <Link
             to="/"
             className="block py-2 hover:text-dark-accent"
-            onClick={toggleMenu}
+            onClick={() => {
+              toggleMenu();
+              navigate("/");
+            }}
           >
             Home
           </Link>

@@ -11,6 +11,7 @@ const Home = () => {
   const settings = {
     dots: false,
     infinite: true,
+    arrows: false,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -93,7 +94,7 @@ const Home = () => {
             <img
               src={image}
               alt={`Slide ${index + 1}`}
-              className="w-full h-[400px] md:h-[600px] object-cover rounded-lg shadow-lg"
+              className="w-full h-[400px] md:h-[500px] object-cover rounded-lg shadow-lg"
             />
             <div className="absolute inset-0 flex flex-col items-center justify-center text-white text-3xl font-bold bg-opacity-50 p-4 rounded-lg">
               <h1 className="2xl:text-5xl md:text-3xl text-2xl">

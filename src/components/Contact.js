@@ -159,7 +159,7 @@ const Contact = () => {
         <div className="aspect-w-16 aspect-h-9 2xl:mt-10 lg-mt-8 md:mt-5 mt-4">
           <iframe
             title="Google Map"
-            className="w-full h-full"
+            className="w-full h-96"
             loading="lazy"
             allowFullScreen
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3152.4438658333426!2d144.96332!3d-37.814107!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642f56ed89f1d%3A0x3fcb4d4bcfcca96c!2sMelbourne%20VIC%2C%20Australia!5e0!3m2!1sen!2sus!4v1622648273868!5m2!1sen!2sus"

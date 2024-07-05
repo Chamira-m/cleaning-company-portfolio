@@ -96,18 +96,18 @@ const Home = () => {
               className="w-full h-[400px] md:h-[600px] object-cover rounded-lg shadow-lg"
             />
             <div className="absolute inset-0 flex flex-col items-center justify-center text-white text-3xl font-bold bg-opacity-50 p-4 rounded-lg">
-              <h1 className="2xl:text-5xl md:text-3xl">
+              <h1 className="2xl:text-5xl md:text-3xl text-2xl">
                 Providing Professional
               </h1>
-              <h1 className="2xl:text-5xl md:text-3xl 2xl:mt-10 md:mt-8 mt-5">
+              <h1 className="2xl:text-5xl md:text-3xl text-2xl 2xl:mt-10 md:mt-8 mt-4">
                 Cleaning Services
               </h1>
-              <div className="2xl:w-[800px] md:w-[600px] w-48 h-1 bg-white mt-4 mb-4" />
+              <div className="2xl:w-[800px] md:w-[600px] w-80 h-1 bg-white mt-4 mb-4" />
               <motion.button
                 onClick={() => navigate("/contact")}
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
-                className="mt-4 px-6 py-2 bg-blue-500 bg-opacity-80 text-white rounded-full shadow-md hover:bg-opacity-100 transition duration-300"
+                className="mt-4 2xl:px-6 2xl:py-2 px-2 py-1 2xl:text-3xl text-lg bg-blue-500 bg-opacity-80 text-white rounded-full shadow-md hover:bg-opacity-100 transition duration-300"
               >
                 Contact Us
               </motion.button>
@@ -122,9 +122,9 @@ const Home = () => {
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: index * 0.1 }}
-            className="p-6 bg-gray-800 text-white rounded-lg shadow-lg flex flex-col items-center"
+            className="2xl:p-6 p-4 md:mx-1 mx-5 bg-gray-800 text-white rounded-2xl shadow-lg flex flex-col items-center"
           >
-            <h2 className="text-2xl font-semibold mb-4 text-center">
+            <h2 className="2xl:text-2xl text-lg font-semibold mb-4 text-center">
               {section.title}
             </h2>
             <p className="text-center">{section.description}</p>

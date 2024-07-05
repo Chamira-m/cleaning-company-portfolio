@@ -28,7 +28,7 @@ const Contact = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5 }}
-        className="text-4xl font-bold text-center my-8"
+        className="2xl:text-4xl text-xl font-bold text-center my-8"
       >
         Contact Us
       </motion.h1>
@@ -115,35 +115,35 @@ const Contact = () => {
           transition={{ duration: 0.5, delay: 0.2 }}
           className="p-6 bg-gray-800 rounded-lg shadow-lg text-white"
         >
-          <p className="mb-4">
+          <p className="mb-4 2xl:text-xl lg:text-lg md:text-base text-sm">
             For any inquiries, please feel free to contact us.
           </p>
-          <p className="mb-4">
+          <p className="mb-4 2xl:text-xl lg:text-lg md:text-base text-sm">
             Your time is valuable, and we will make sure to get back to you as
             soon as we can.
           </p>
-          <p className="mb-4 2xl:text-3xl lg:text-2xl md:text-xl text-xl font-bold">
+          <p className="mb-4 2xl:text-2xl lg:text-xl md:text-lg text-base font-bold">
             Nuga Property Services
           </p>
-          <p className="mb-4">
+          <p className="mb-4 2xl:text-xl lg:text-lg md:text-base text-sm">
             8A/7-9 Futura Road, Keysborough Victoria 3173, Australia
           </p>
-          <p className="mb-4">
+          <p className="mb-4 2xl:text-xl lg:text-lg md:text-base text-sm">
             Email: admin@nugapropertyservices.com.au
             <br />
             Telephone: 03 8774 0724
             <br />
             Mobile: 04 2833 8888
           </p>
-          <p className="mb-4 2xl:text-3xl lg:text-2xl md:text-xl text-xl font-bold">
+          <p className="mb-4 2xl:text-2xl lg:text-xl md:text-lg text-base font-bold">
             Office Hours:
           </p>
-          <p className="mb-4">
+          <p className="mb-4 2xl:text-xl lg:text-lg md:text-base text-sm">
             Open today
             <br />
             09:30 am – 04:00 pm
           </p>
-          <p className="mb-4">
+          <p className="mb-4 2xl:text-xl lg:text-lg md:text-base text-sm">
             These are just our office hours but we are functional 24/7 for your
             convenience.
           </p>

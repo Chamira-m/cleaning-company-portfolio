@@ -21,21 +21,23 @@ const categories = [
 
 const About = () => {
   return (
-    <div className="container mx-auto p-4 flex flex-col lg:flex-row 2xl:mt-16 lg:mt-10 md:mt-8 mt-8 mb-28">
+    <div className="container mx-auto p-4 flex flex-col lg:flex-row 2xl:mt-16 lg:mt-10 md:mt-8 mt-2 mb-28">
       <motion.div
         initial={{ opacity: 0, x: -50 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.5 }}
         className="lg:w-1/2 p-6"
       >
-        <h1 className="text-4xl font-bold text-center lg:text-left my-8">
+        <h1 className="2xl:text-4xl text-xl font-bold text-center lg:text-left my-8">
           About Us
         </h1>
         <div className="space-y-6">
           {categories.map((category, index) => (
             <div key={index} className="bg-gray-800 p-6 rounded-lg shadow-lg">
-              <h2 className="text-2xl font-semibold mb-4">{category.title}</h2>
-              <p>{category.description}</p>
+              <h2 className="2xl:text-2xl text-lg font-semibold mb-4">
+                {category.title}
+              </h2>
+              <p className="2xl:text-xl text-sm ">{category.description}</p>
             </div>
           ))}
         </div>

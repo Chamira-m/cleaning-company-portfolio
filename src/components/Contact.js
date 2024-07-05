@@ -1,7 +1,27 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { useRef } from "react";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm("service_268bgri", "template_crfefqv", form.current, {
+        publicKey: "QMkojJ3_av80wFxK1",
+      })
+      .then(
+        () => {
+          console.log("SUCCESS!");
+        },
+        (error) => {
+          console.log("FAILED...", error.text);
+        }
+      );
+  };
   return (
     <div className="container mx-auto p-4 2xl:mt-16 lg:mt-10 md:mt-8 mt-8 mb-28">
       <motion.h1
@@ -20,7 +40,7 @@ const Contact = () => {
           transition={{ duration: 0.5 }}
           className="bg-gray-800 p-6 rounded-lg shadow-lg"
         >
-          <form className="space-y-4">
+          <form ref={form} onSubmit={sendEmail} className="space-y-4">
             <div>
               <label htmlFor="name" className="block text-sm font-medium">
                 Name
@@ -28,6 +48,7 @@ const Contact = () => {
               <input
                 type="text"
                 id="name"
+                name="user_name"
                 className="mt-1 block w-full p-2 bg-gray-700 border border-gray-600 rounded-md text-white"
               />
             </div>
@@ -38,6 +59,7 @@ const Contact = () => {
               <input
                 type="email"
                 id="email"
+                name="user_email"
                 className="mt-1 block w-full p-2 bg-gray-700 border border-gray-600 rounded-md text-white"
               />
             </div>
@@ -48,6 +70,7 @@ const Contact = () => {
               <input
                 type="tel"
                 id="phone"
+                name="user_phone"
                 className="mt-1 block w-full p-2 bg-gray-700 border border-gray-600 rounded-md text-white"
               />
             </div>
@@ -58,6 +81,7 @@ const Contact = () => {
               <input
                 type="text"
                 id="property"
+                name="user_address"
                 className="mt-1 block w-full p-2 bg-gray-700 border border-gray-600 rounded-md text-white"
               />
             </div>
@@ -68,12 +92,14 @@ const Contact = () => {
               <textarea
                 id="message"
                 rows="4"
+                name="user_message"
                 className="mt-1 block w-full p-2 bg-gray-700 border border-gray-600 rounded-md text-white"
               ></textarea>
             </div>
             <div className="text-center">
               <button
                 type="submit"
+                value="send"
                 className="px-4 py-2 bg-blue-600 hover:bg-blue-700 rounded-md text-white"
               >
                 Send Message

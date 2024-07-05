@@ -2,7 +2,6 @@ import React from "react";
 import Slider from "react-slick";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
-import { FaWhatsapp } from "react-icons/fa";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 

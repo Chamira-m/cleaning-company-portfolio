@@ -136,7 +136,7 @@ const Home = () => {
         <h2 className="text-xl md:text-3xl lg:text-4xl poppins-bold text-center">
           READY TO GET STARTED?
         </h2>
-        <p className="mt-4 text-center text-sm md:text-base lg:text-lg poppins-regular">
+        <p className="mt-4 text-center text-xs md:text-base lg:text-lg poppins-regular">
           Enter your details below and we’ll get straight back to you.
           <br />
           Don’t worry, our services are 100% guaranteed.

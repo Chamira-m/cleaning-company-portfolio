@@ -21,21 +21,21 @@ const OfficeCleaning = () => {
           Maintenance Plan.
         </h2>
         <div className="flex flex-col lg:flex-row gap-4">
-          <div className="flex-1 md:p-8 p-4 ">
+          <div className="flex-1 lg:p-8 md:p-6 p-2 ">
             <p>
               We at SEYNAR are proud of our 5 years providing high quality
               commercial cleaning services to many high profile tenants,
               managing agents and property owners across the Eastern Seaboard.
             </p>
           </div>
-          <div className="flex-1 md:p-8 p-4 lg:border-l-2 lg:border-r-2  border-black">
+          <div className="flex-1 lg:p-8 md:p-6 p-2 lg:border-l-2 lg:border-r-2  border-black">
             <p>
               We are experts in servicing a wide range of premium and A-Grade
               buildings, including brand new developments, mixed use precincts,
               end of trip facilities and activity based working environments.
             </p>
           </div>
-          <div className="flex-1 md:p-8 p-4  ">
+          <div className="flex-1 lg:p-8 md:p-6 p-2 ">
             <p>
               We work in partnership with our clients to achieve building
               accreditations and targets such as CAF 3 Star Certification,

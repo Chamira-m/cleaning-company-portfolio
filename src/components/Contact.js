@@ -8,7 +8,23 @@ const Contact = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
+    // Validate required fields
+    const formData = new FormData(form.current);
+    let isValid = true;
 
+    formData.forEach((value, key) => {
+      if (!value.trim()) {
+        isValid = false;
+        const input = form.current.querySelector(`[name=${key}]`);
+        input.classList.add("border-red-500"); // Add red border for visual feedback
+      }
+    });
+    // If all fields are filled, send the email
+
+    if (!isValid) {
+      console.log("Please fill out all required fields.");
+      return;
+    }
     emailjs
       .sendForm("service_268bgri", "template_crfefqv", form.current, {
         publicKey: "QMkojJ3_av80wFxK1",
@@ -16,6 +32,8 @@ const Contact = () => {
       .then(
         () => {
           console.log("SUCCESS!");
+          // Refresh the page after successful submission
+          window.location.reload();
         },
         (error) => {
           console.log("FAILED...", error.text);
@@ -28,7 +46,7 @@ const Contact = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5 }}
-        className="2xl:text-4xl text-xl font-bold text-center my-8"
+        className="2xl:text-4xl text-xl poppins-bold text-center my-8"
       >
         Contact Us
       </motion.h1>
@@ -38,72 +56,79 @@ const Contact = () => {
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="bg-slate-300 p-6 rounded-lg shadow-lg"
+          className="bg-slate-100 p-6 rounded-lg shadow-lg"
         >
           <form ref={form} onSubmit={sendEmail} className="space-y-4">
             <div>
-              <label htmlFor="name" className="block text-sm font-medium">
+              <label htmlFor="name" className="block text-sm poppins-regular">
                 Name
               </label>
               <input
                 type="text"
                 id="name"
                 name="user_name"
-                className="mt-1 block w-full p-2 bg-white text-black border border-gray-600 rounded-md "
+                className="mt-1 block w-full p-2 bg-white text-black border rounded-md "
               />
             </div>
             <div>
-              <label htmlFor="email" className="block text-sm font-medium">
+              <label htmlFor="email" className="block text-sm poppins-regular">
                 Email
               </label>
               <input
                 type="email"
                 id="email"
                 name="user_email"
-                className="mt-1 block w-full p-2 bg-white text-black border border-gray-600 rounded-md "
+                className="mt-1 block w-full p-2 bg-white text-black border rounded-md "
               />
             </div>
             <div>
-              <label htmlFor="phone" className="block text-sm font-medium">
+              <label htmlFor="phone" className="block text-sm poppins-regular">
                 Phone Number
               </label>
               <input
                 type="tel"
                 id="phone"
                 name="user_phone"
-                className="mt-1 block w-full p-2 bg-white text-black border border-gray-600 rounded-md "
+                className="mt-1 block w-full p-2 bg-white text-black border rounded-md "
               />
             </div>
             <div>
-              <label htmlFor="property" className="block text-sm font-medium">
+              <label
+                htmlFor="property"
+                className="block text-sm poppins-regular"
+              >
                 Property Address
               </label>
               <input
                 type="text"
                 id="property"
                 name="user_address"
-                className="mt-1 block w-full p-2 bg-white text-black border border-gray-600 rounded-md "
+                className="mt-1 block w-full p-2 bg-white text-black border rounded-md "
               />
             </div>
             <div>
-              <label htmlFor="message" className="block text-sm font-medium">
+              <label
+                htmlFor="message"
+                className="block text-sm poppins-regular"
+              >
                 Tell Us More
               </label>
               <textarea
                 id="message"
                 rows="4"
                 name="user_message"
-                className="mt-1 block w-full p-2 bg-white text-black border border-gray-600 rounded-md "
+                className="mt-1 block w-full p-2 bg-white text-black border rounded-md "
               ></textarea>
             </div>
             <div className="text-center">
-              <button
+              <motion.button
                 type="submit"
-                value="send"
-                className="px-4 py-2 bg-black hover:bg-blue-700 rounded-md text-white"
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+                className="mt-4 2xl:px-6 2xl:py-2 px-2 py-1 2xl:text-xl text-base bg-white text-black rounded-full shadow-md hover:bg-opacity-100 transition duration-300 poppins-bold"
               >
                 Send Message
-              </button>
+              </motion.button>
             </div>
           </form>
         </motion.div>
@@ -113,37 +138,37 @@ const Contact = () => {
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="p-6 bg-slate-300 text-black rounded-lg shadow-lg "
+          className="p-6 bg-slate-100 text-black rounded-lg shadow-lg "
         >
-          <p className="mb-4 2xl:text-xl lg:text-lg md:text-base text-sm">
+          <p className="mb-4 2xl:text-xl lg:text-lg md:text-base text-sm poppins-regular">
             For any inquiries, please feel free to contact us.
           </p>
-          <p className="mb-4 2xl:text-xl lg:text-lg md:text-base text-sm">
+          <p className="mb-4 2xl:text-xl lg:text-lg md:text-base text-sm poppins-regular">
             Your time is valuable, and we will make sure to get back to you as
             soon as we can.
           </p>
-          <p className="mb-4 2xl:text-2xl lg:text-xl md:text-lg text-base font-bold">
-            Nuga Property Services
+          <p className="mb-4 2xl:text-2xl lg:text-xl md:text-lg text-base poppins-bold">
+            Seynar Property Services
           </p>
-          <p className="mb-4 2xl:text-xl lg:text-lg md:text-base text-sm">
+          <p className="mb-4 2xl:text-xl lg:text-lg md:text-base text-sm poppins-regular">
             8A/7-9 Futura Road, Keysborough Victoria 3173, Australia
           </p>
-          <p className="mb-4 2xl:text-xl lg:text-lg md:text-base text-sm">
-            Email: admin@nugapropertyservices.com.au
+          <p className="mb-4 2xl:text-xl lg:text-lg md:text-base text-sm poppins-regular">
+            Email: admin@seynarpropertyservices.com.au
             <br />
             Telephone: 03 8774 0724
             <br />
-            Mobile: 04 2833 8888
+            Mobile: 04 092304022
           </p>
-          <p className="mb-4 2xl:text-2xl lg:text-xl md:text-lg text-base font-bold">
+          <p className="mb-4 2xl:text-2xl lg:text-xl md:text-lg text-base poppins-bold">
             Office Hours:
           </p>
-          <p className="mb-4 2xl:text-xl lg:text-lg md:text-base text-sm">
+          <p className="mb-4 2xl:text-xl lg:text-lg md:text-base text-sm poppins-regular">
             Open today
             <br />
             09:30 am – 04:00 pm
           </p>
-          <p className="mb-4 2xl:text-xl lg:text-lg md:text-base text-sm">
+          <p className="mb-4 2xl:text-xl lg:text-lg md:text-base text-sm poppins-regular">
             These are just our office hours but we are functional 24/7 for your
             convenience.
           </p>

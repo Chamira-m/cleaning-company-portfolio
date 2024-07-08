@@ -123,7 +123,7 @@ const Home = () => {
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: index * 0.1 }}
-            className="2xl:p-6 p-4 md:mx-1 mx-5 bg-slate-300 text-black rounded-2xl shadow-lg flex flex-col items-center "
+            className="2xl:p-6 p-4 md:mx-1 mx-5 bg-slate-100 text-black rounded-2xl shadow-lg flex flex-col items-center "
           >
             <h2 className="2xl:text-2xl text-lg font-semibold mb-4 text-center poppins-semibold">
               {section.title}
@@ -145,7 +145,7 @@ const Home = () => {
           onClick={() => navigate("/contact")}
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
-          className="mt-6 2xl:px-6 2xl:py-2 px-2 py-1 2xl:text-3xl text-lg bg-white text-black rounded-full shadow-md hover:bg-opacity-100 transition duration-300 poppins-bold"
+          className="mt-6 2xl:px-6 2xl:py-2 px-2 py-1 2xl:text-3xl text-base bg-white text-black rounded-full shadow-md hover:bg-opacity-100 transition duration-300 poppins-bold"
         >
           Book Now
         </motion.button>

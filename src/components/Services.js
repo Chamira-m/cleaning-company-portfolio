@@ -15,35 +15,35 @@ const services = [
     description:
       "Professional cleaning services for your home. Our team ensures a spotless living space with eco-friendly products.",
     image: "/services/commercial.jpg",
-    nav: "/office",
+    nav: "/CommrcialCleaning",
   },
   {
     title: "Steam Cleaning",
     description:
       "Crystal clear windows with our professional window cleaning services. We handle all types of windows safely and efficiently.",
     image: "/services/service1.jpg",
-    nav: "/office",
+    nav: "/SteamCleaning",
   },
   {
     title: "High Pressure Cleaning",
     description:
       "Keep your workplace clean and hygienic with our office cleaning services. We work around your schedule for minimal disruption.",
     image: "/services/service1.jpg",
-    nav: "/office",
+    nav: "/HighPressureCleaning",
   },
   {
     title: "Mould Remediation",
     description:
       "Our deep cleaning services cover every nook and cranny, providing a thorough clean that leaves your space immaculate.",
     image: "/services/service1.jpg",
-    nav: "/office",
+    nav: "/MouldRemediation",
   },
   {
     title: "Water Damagde Remediation",
     description:
       "Revitalize your carpets with our specialized carpet cleaning services. We remove stains, dirt, and allergens effectively.",
     image: "/services/service1.jpg",
-    nav: "/office",
+    nav: "/WaterDamagdeRemediation",
   },
 ];
 

@@ -23,7 +23,7 @@ const Contact = () => {
       );
   };
   return (
-    <div className="container mx-auto p-4 2xl:mt-16 lg:mt-10 md:mt-8 mt-8 mb-28">
+    <div className="container mx-auto p-4 2xl:mt-16 lg:mt-10 md:mt-8 mt-8 mb-28 text-black">
       <motion.h1
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -38,7 +38,7 @@ const Contact = () => {
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="bg-gray-800 p-6 rounded-lg shadow-lg"
+          className="bg-slate-300 p-6 rounded-lg shadow-lg"
         >
           <form ref={form} onSubmit={sendEmail} className="space-y-4">
             <div>
@@ -49,7 +49,7 @@ const Contact = () => {
                 type="text"
                 id="name"
                 name="user_name"
-                className="mt-1 block w-full p-2 bg-gray-700 border border-gray-600 rounded-md text-white"
+                className="mt-1 block w-full p-2 bg-white text-black border border-gray-600 rounded-md "
               />
             </div>
             <div>
@@ -60,7 +60,7 @@ const Contact = () => {
                 type="email"
                 id="email"
                 name="user_email"
-                className="mt-1 block w-full p-2 bg-gray-700 border border-gray-600 rounded-md text-white"
+                className="mt-1 block w-full p-2 bg-white text-black border border-gray-600 rounded-md "
               />
             </div>
             <div>
@@ -71,7 +71,7 @@ const Contact = () => {
                 type="tel"
                 id="phone"
                 name="user_phone"
-                className="mt-1 block w-full p-2 bg-gray-700 border border-gray-600 rounded-md text-white"
+                className="mt-1 block w-full p-2 bg-white text-black border border-gray-600 rounded-md "
               />
             </div>
             <div>
@@ -82,7 +82,7 @@ const Contact = () => {
                 type="text"
                 id="property"
                 name="user_address"
-                className="mt-1 block w-full p-2 bg-gray-700 border border-gray-600 rounded-md text-white"
+                className="mt-1 block w-full p-2 bg-white text-black border border-gray-600 rounded-md "
               />
             </div>
             <div>
@@ -93,14 +93,14 @@ const Contact = () => {
                 id="message"
                 rows="4"
                 name="user_message"
-                className="mt-1 block w-full p-2 bg-gray-700 border border-gray-600 rounded-md text-white"
+                className="mt-1 block w-full p-2 bg-white text-black border border-gray-600 rounded-md "
               ></textarea>
             </div>
             <div className="text-center">
               <button
                 type="submit"
                 value="send"
-                className="px-4 py-2 bg-blue-600 hover:bg-blue-700 rounded-md text-white"
+                className="px-4 py-2 bg-black hover:bg-blue-700 rounded-md text-white"
               >
                 Send Message
               </button>
@@ -113,7 +113,7 @@ const Contact = () => {
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="p-6 bg-gray-800 rounded-lg shadow-lg text-white"
+          className="p-6 bg-slate-300 text-black rounded-lg shadow-lg "
         >
           <p className="mb-4 2xl:text-xl lg:text-lg md:text-base text-sm">
             For any inquiries, please feel free to contact us.

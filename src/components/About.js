@@ -28,12 +28,15 @@ const About = () => {
         transition={{ duration: 0.5 }}
         className="lg:w-1/2 p-6"
       >
-        <h1 className="2xl:text-4xl text-xl font-bold text-center lg:text-left my-8">
+        <h1 className="2xl:text-4xl text-xl font-bold text-center text-black lg:text-left my-8">
           About Us
         </h1>
         <div className="space-y-6">
           {categories.map((category, index) => (
-            <div key={index} className="bg-gray-800 p-6 rounded-lg shadow-lg">
+            <div
+              key={index}
+              className="bg-slate-300 text-black p-6 rounded-lg shadow-lg"
+            >
               <h2 className="2xl:text-2xl text-lg font-semibold mb-4">
                 {category.title}
               </h2>

@@ -87,7 +87,7 @@ const Home = () => {
   ];
 
   return (
-    <div className="container mx-auto 2xl:mt-28 lg:mt-20 md:mt-10 mt-24 mb-28">
+    <div className="bg-white h-auto 2xl:mb-32 mb-32">
       <Slider {...settings}>
         {images.map((image, index) => (
           <div key={index} className="relative">
@@ -96,7 +96,7 @@ const Home = () => {
               alt={`Slide ${index + 1}`}
               className="w-full h-[400px] md:h-[500px] object-cover rounded-lg shadow-lg"
             />
-            <div className="absolute inset-0 flex flex-col items-center justify-center text-white text-3xl font-bold bg-opacity-50 p-4 rounded-lg">
+            <div className="absolute inset-0 flex flex-col items-center justify-center text-white text-3xl bg-opacity-50 p-4 rounded-lg poppins-bold ">
               <h1 className="2xl:text-5xl md:text-3xl text-2xl">
                 Providing Professional
               </h1>
@@ -108,7 +108,7 @@ const Home = () => {
                 onClick={() => navigate("/contact")}
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
-                className="mt-4 2xl:px-6 2xl:py-2 px-2 py-1 2xl:text-3xl text-lg bg-blue-500 bg-opacity-80 text-white rounded-full shadow-md hover:bg-opacity-100 transition duration-300"
+                className="mt-4 2xl:px-6 2xl:py-2 px-2 py-1 2xl:text-3xl text-lg bg-slate-300 bg-opacity-80 text-white rounded-full shadow-md hover:bg-opacity-100 transition duration-300"
               >
                 Contact Us
               </motion.button>
@@ -116,21 +116,39 @@ const Home = () => {
           </div>
         ))}
       </Slider>
-      <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 pb-24 px-4">
         {sections.map((section, index) => (
           <motion.div
             key={index}
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: index * 0.1 }}
-            className="2xl:p-6 p-4 md:mx-1 mx-5 bg-gray-800 text-white rounded-2xl shadow-lg flex flex-col items-center"
+            className="2xl:p-6 p-4 md:mx-1 mx-5 bg-slate-300 text-black rounded-2xl shadow-lg flex flex-col items-center "
           >
-            <h2 className="2xl:text-2xl text-lg font-semibold mb-4 text-center">
+            <h2 className="2xl:text-2xl text-lg font-semibold mb-4 text-center poppins-semibold">
               {section.title}
             </h2>
-            <p className="text-center">{section.description}</p>
+            <p className="text-center poppins-regular">{section.description}</p>
           </motion.div>
         ))}
+      </div>
+      <div className="bg-black text-white py-10 px-4 md:px-10 lg:px-20 flex flex-col items-center">
+        <h2 className="text-xl md:text-3xl lg:text-4xl poppins-bold text-center">
+          READY TO GET STARTED?
+        </h2>
+        <p className="mt-4 text-center text-sm md:text-base lg:text-lg poppins-regular">
+          Enter your details below and we’ll get straight back to you.
+          <br />
+          Don’t worry, our services are 100% guaranteed.
+        </p>
+        <motion.button
+          onClick={() => navigate("/contact")}
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
+          className="mt-6 2xl:px-6 2xl:py-2 px-2 py-1 2xl:text-3xl text-lg bg-white text-black rounded-full shadow-md hover:bg-opacity-100 transition duration-300 poppins-bold"
+        >
+          Book Now
+        </motion.button>
       </div>
     </div>
   );

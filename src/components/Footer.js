@@ -14,7 +14,7 @@ const Footer = () => {
         <FaWhatsapp size={32} />
       </a>
       <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
-        <div className="text-center md:text-left mb-4 md:mb-0">
+        <div className="text-center md:text-left mb-4 md:mb-0 text-xs">
           <p>
             &copy; {new Date().getFullYear()} CleaningCo. All rights reserved.
           </p>

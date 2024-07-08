@@ -20,9 +20,9 @@ const Header = () => {
       variants={headerVariants}
       initial="hidden"
       animate="visible"
-      className="bg-gray-900 text-white p-4 fixed top-0 left-0 right-0 z-50"
+      className="bg-white text-black p-4 fixed top-0 left-0 right-0 z-50"
     >
-      <div className="container mx-auto flex justify-between items-center">
+      <div className="container mx-auto flex justify-between items-center poppins-regular ">
         {/* Logo with Link to Home */}
         <Link to="/" className="flex items-center">
           <img src="/logo.png" alt="Company Logo" className="mr-2" />
@@ -32,6 +32,9 @@ const Header = () => {
         <nav className="space-x-4 hidden md:block">
           <Link to="/" className="hover:text-dark-accent">
             Home
+          </Link>
+          <Link to="/office" className="hover:text-dark-accent">
+            Office Cleaning
           </Link>
           <Link to="/services" className="hover:text-dark-accent">
             Services
@@ -59,7 +62,7 @@ const Header = () => {
 
       {/* Mobile Menu */}
       {menuOpen && (
-        <div className="md:hidden bg-gray-800 text-white p-4 mt-2">
+        <div className="md:hidden bg-white text-black p-4 mt-2 poppins-regular">
           <Link
             to="/"
             className="block py-2 hover:text-dark-accent"
@@ -71,12 +74,20 @@ const Header = () => {
             Home
           </Link>
           <Link
+            to="/office"
+            className="block py-2 hover:text-dark-accent"
+            onClick={toggleMenu}
+          >
+            Office Cleaning
+          </Link>
+          <Link
             to="/services"
             className="block py-2 hover:text-dark-accent"
             onClick={toggleMenu}
           >
             Services
           </Link>
+
           <Link
             to="/about"
             className="block py-2 hover:text-dark-accent"

@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import ServicesList from "./home/ServiceList";
 
 const Home = () => {
   const navigate = useNavigate();
@@ -87,7 +88,7 @@ const Home = () => {
   ];
 
   return (
-    <div className="bg-white h-auto 2xl:mb-32 mb-32">
+    <div className="bg-white h-auto 2xl:mb-64 mb-64">
       <Slider {...settings}>
         {images.map((image, index) => (
           <div key={index} className="relative">
@@ -150,6 +151,7 @@ const Home = () => {
           Book Now
         </motion.button>
       </div>
+      <ServicesList />
     </div>
   );
 };

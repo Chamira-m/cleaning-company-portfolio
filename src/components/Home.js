@@ -2,6 +2,12 @@ import React from "react";
 import Slider from "react-slick";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
+import {
+  FaStar,
+  FaLeaf,
+  FaMoneyBillWave,
+  FaHandsHelping,
+} from "react-icons/fa";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import ServicesList from "./home/ServiceList";
@@ -66,24 +72,28 @@ const Home = () => {
 
   const sections = [
     {
+      icon: <FaStar />,
       title: "High Quality Service",
       description:
         "We provide top-quality services at affordable prices to our customers in a wide range of areas.",
     },
     {
-      title: "Latest Cleaning Technologies",
+      icon: <FaLeaf />,
+      title: "Eco-Sustainable Service",
       description:
-        "We apply advanced cleaning technologies to maintain our high quality service to make our customers more satisfied.",
+        "We apply green, eco-friendly cleaning technologies to maintain our high quality service to make our customers more satisfied.",
     },
     {
+      icon: <FaMoneyBillWave />,
       title: "Cost Benefits",
       description:
         "We use our own cleaning products and equipment to provide peace of mind for the clients and save money in the long run.",
     },
     {
+      icon: <FaHandsHelping />,
       title: "Expertise in the Field",
       description:
-        "Nuga has a well-trained and experienced team who will assure a job well done and beyond expected.",
+        "Seynar has a well-trained and experienced team who will assure a job well done and beyond expected.",
     },
   ];
 
@@ -126,6 +136,7 @@ const Home = () => {
             transition={{ duration: 0.5, delay: index * 0.1 }}
             className="2xl:p-6 p-4 md:mx-1 mx-5 bg-slate-100 text-black rounded-2xl shadow-lg flex flex-col items-center "
           >
+            <div className="text-green-500 text-4xl mb-4">{section.icon}</div>
             <h2 className="2xl:text-2xl text-lg font-semibold mb-4 text-center poppins-semibold">
               {section.title}
             </h2>

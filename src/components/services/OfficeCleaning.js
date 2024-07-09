@@ -60,7 +60,9 @@ const OfficeCleaning = () => {
           Premium Office Cleaning matched with our Expert Specialised
           Maintenance Plan.
         </h2>
-        <div className="flex flex-col lg:flex-row gap-4">
+        <div className="flex flex-col lg:flex-row gap-4 text-center">
+          {" "}
+          {/* Ensure text alignment is left */}
           <div className="flex-1 lg:p-8 md:p-6 p-2">
             <p>
               We at SEYNAR are proud of our 5 years providing high quality

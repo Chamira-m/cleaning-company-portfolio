@@ -33,9 +33,6 @@ const Header = () => {
           <Link to="/" className="hover:text-dark-accent">
             Home
           </Link>
-          <Link to="/office" className="hover:text-dark-accent">
-            Office Cleaning
-          </Link>
           <Link to="/services" className="hover:text-dark-accent">
             Services
           </Link>
@@ -72,13 +69,6 @@ const Header = () => {
             }}
           >
             Home
-          </Link>
-          <Link
-            to="/office"
-            className="block py-2 hover:text-dark-accent"
-            onClick={toggleMenu}
-          >
-            Office Cleaning
           </Link>
           <Link
             to="/services"

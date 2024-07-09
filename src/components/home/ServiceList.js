@@ -15,8 +15,8 @@ const ServicesList = () => {
   ];
 
   return (
-    <div className="absolute right-0 mt-5 mr-4 text-right text-black">
-      <h2 className="2xl:text-2xl lg:text-base text-sm poppins-bold mb-2">
+    <div className="absolute right-0 mt-5 mr-4 text-right text-black lg:pb-16">
+      <h2 className="mb-2 text-sm 2xl:text-2xl lg:text-base poppins-bold">
         OUR SERVICES
       </h2>
       {services.map((service, index) => (
@@ -26,7 +26,7 @@ const ServicesList = () => {
           className="cursor-pointer"
           onClick={() => navigate(service.path)}
         >
-          <p className="2xl:text-lg lg:text-sm text-xs mb-1 poppins-regular">
+          <p className="mb-1 text-xs 2xl:text-lg lg:text-sm poppins-regular">
             {service.name}
           </p>
         </motion.div>

@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import Home from "./components/Home";
 import Services from "./components/Services";
 import About from "./components/About";
+import OurWork from "./components/OurWork";
 import OfficeCleaning from "./components/services/OfficeCleaning";
 import CommrcialCleaning from "./components/services/CommrcialCleaning";
 import HighPressureCleaning from "./components/services/HighPressureCleaning";
@@ -29,6 +30,8 @@ const App = () => {
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/office" element={<OfficeCleaning />} />
+            <Route path="/ourwork" element={<OurWork />} />
+
             <Route path="/CommrcialCleaning" element={<CommrcialCleaning />} />
             <Route
               path="/HighPressureCleaning"

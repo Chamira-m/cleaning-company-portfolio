@@ -39,6 +39,9 @@ const Header = () => {
           <Link to="/about" className="hover:text-dark-accent">
             About
           </Link>
+          <Link to="/ourwork" className="hover:text-dark-accent">
+            Our Work
+          </Link>
           <Link to="/contact" className="hover:text-dark-accent">
             Contact
           </Link>
@@ -84,6 +87,14 @@ const Header = () => {
             onClick={toggleMenu}
           >
             About
+          </Link>
+
+          <Link
+            to="/ourwork"
+            className="block py-2 hover:text-dark-accent"
+            onClick={toggleMenu}
+          >
+            Our Work
           </Link>
           <Link
             to="/contact"

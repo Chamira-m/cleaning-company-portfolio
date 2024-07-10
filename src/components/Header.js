@@ -25,7 +25,11 @@ const Header = () => {
       <div className="container mx-auto flex justify-between items-center poppins-regular ">
         {/* Logo with Link to Home */}
         <Link to="/" className="flex items-center">
-          <img src="/logo.png" alt="Company Logo" className="mr-2" />
+          <img
+            src="/logo2.png"
+            alt="Company Logo"
+            className="2xl:w-36 2xl:h-10 lg:w-44 lg:h-12 md:w-36 md:h-14"
+          />
         </Link>
 
         {/* Desktop Navigation */}

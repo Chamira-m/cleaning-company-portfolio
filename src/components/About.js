@@ -11,14 +11,14 @@ const About = () => {
           transition={{ duration: 0.5 }}
           className="2xl:p-6 md:mx-1 bg-gray-50 text-black flex flex-col items-center z-10 p-8 md:p-16 lg:p-24 rounded-xl shadow-lg max-w-6xl mx-4"
         >
-          <h1 className="text-center text-3xl md:text-4xl lg:text-5xl font-bold text-green-700 mb-6 poppins-bold">
+          <h1 className="text-center text-3xl md:text-4xl lg:text-5xl font-bold text-black mb-6 poppins-bold">
             OUR GOAL
           </h1>
           <h2 className="text-center text-2xl md:text-3xl lg:text-4xl poppins-bold mb-8">
             Welcome to Seynar - Pioneering Sustainable Solutions for a Greener
             Australia
           </h2>
-          <h2 className="text-center text-2xl md:text-3xl lg:text-4xl font-semibold text-green-700 mb-4 poppins-bold">
+          <h2 className="text-center text-2xl md:text-3xl lg:text-4xl font-semibold text-black mb-4 poppins-bold">
             Our Mission
           </h2>
           <p className="text-center text-gray-700 text-base md:text-lg mb-6 poppins-regular">
@@ -28,7 +28,7 @@ const About = () => {
             committed to providing superior cleaning services while championing
             sustainability and ecological responsibility.
           </p>
-          <h2 className="text-center text-2xl md:text-3xl lg:text-4xl font-semibold text-green-700 mb-4 poppins-bold">
+          <h2 className="text-center text-2xl md:text-3xl lg:text-4xl font-semibold text-black mb-4 poppins-bold">
             Our Comprehensive Cleaning Services
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
@@ -209,12 +209,12 @@ const About = () => {
           </p>
           <div className="flex justify-center mt-8">
             <img
-              src="/about/leaves.jpg"
+              src="/about/about.jpg"
               alt="Plant"
               className="w-24 h-24 md:w-36 md:h-36 lg:w-48 lg:h-48"
             />
           </div>
-          <p className="text-center text-green-700 text-base md:text-lg mt-8 poppins-bold">
+          <p className="text-center text-black text-base md:text-lg mt-8 poppins-bold">
             Join us in our mission to create a cleaner, greener Australia.
             Contact us today to learn more about our services and how we can
             help you achieve a more sustainable future.

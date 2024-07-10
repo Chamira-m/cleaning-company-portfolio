@@ -24,7 +24,7 @@ const Resealing = () => {
     <div className="relative mb-32">
       <div className="relative">
         <img
-          src="/office/office.jpg"
+          src="/services/resealing2.jpeg"
           alt="Slate, Stone & Vinyl Floor Resealing"
           className="w-full h-[400px] md:h-[500px] object-cover rounded-lg shadow-lg"
         />

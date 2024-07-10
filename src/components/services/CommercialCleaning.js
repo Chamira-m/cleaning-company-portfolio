@@ -1,58 +1,82 @@
 import React from "react";
+import {
+  FaBuilding,
+  FaTrashAlt,
+  FaWindowMaximize,
+  FaCar,
+  FaSplotch,
+  FaBroom,
+  FaRecycle,
+  FaLeaf,
+  FaFileAlt,
+  FaCog,
+  FaCheckCircle,
+} from "react-icons/fa";
 import BlackLine from "../shared/BlackLine";
 
 const commercialCleaningSections = [
   {
+    icon: <FaBuilding />,
     title: "Office Cleaning",
     description:
       "Our office cleaning services ensure that your workspace is clean, organized, and welcoming. We handle everything from dusting and vacuuming to sanitizing high-touch areas, creating a healthy environment for your employees and visitors.",
   },
   {
+    icon: <FaTrashAlt />,
     title: "Restroom Cleaning",
     description:
       "We provide thorough restroom cleaning services, including disinfection and restocking of supplies, to maintain hygiene and comfort for your staff and guests.",
   },
   {
+    icon: <FaCar />,
     title: "Carpet Cleaning",
     description:
       "Our carpet cleaning services include regular maintenance and deep cleaning to remove dirt, stains, and allergens, extending the life of your carpets and improving indoor air quality.",
   },
   {
+    icon: <FaWindowMaximize />,
     title: "Window Cleaning",
     description:
       "Clean windows enhance the appearance of your building and allow more natural light into your workspace. Our professional window cleaning services ensure streak-free, spotless results.",
   },
   {
+    icon: <FaBroom />,
     title: "Floor Cleaning and Maintenance",
     description:
       "We offer specialized cleaning and maintenance for various types of flooring, including vinyl, tile, and hardwood. Our services include floor stripping and sealing, tile and grout cleaning, and regular maintenance to keep your floors looking their best.",
   },
   {
+    icon: <FaSplotch />,
     title: "High-Pressure Cleaning",
     description:
       "For exterior surfaces and high-traffic areas, our high-pressure cleaning services effectively remove dirt, grime, and stains, ensuring a clean and professional appearance.",
   },
   {
+    icon: <FaRecycle />,
     title: "Waste Management and Recycling",
     description:
       "Seynar is committed to sustainability. We provide waste management and recycling services to help your business reduce its environmental footprint and comply with relevant regulations.",
   },
   {
+    icon: <FaLeaf />,
     title: "Eco-Friendly Cleaning Solutions",
     description:
       "For our premium subscription customers, Seynar exclusively uses eco-friendly products and sustainable cleaning methods. This approach not only ensures a safe and healthy environment for your employees but also supports your company’s commitment to sustainability.",
   },
   {
+    icon: <FaFileAlt />,
     title: "Customized Cleaning Plans",
     description:
       "We understand that every business has unique cleaning needs. Our team works closely with you to develop customized cleaning plans that address your specific requirements and schedule. Whether you need daily, weekly, or monthly cleaning services, we provide flexible solutions that fit your business operations.",
   },
   {
+    icon: <FaCog />,
     title: "Meeting Australian Standards",
     description:
       "Seynar is dedicated to helping our customers achieve and maintain relevant Australian cleaning standards. Our services comply with the following certifications:\n\n• ISO 14001: Environmental Management Systems\n• AS/NZS 4801: Occupational Health and Safety Management Systems\n• ISO 9001: Quality Management Systems\n• GECA (Good Environmental Choice Australia): Certification for environmentally preferable products and services\n• NSW Health Cleaning Service Standards: Compliance with state health and hygiene standards\n\nBy adhering to these standards, we ensure that our cleaning practices not only meet but exceed industry expectations, providing our clients with the highest level of service and quality assurance.",
   },
   {
+    icon: <FaCheckCircle />,
     title: "Why Choose Seynar for Commercial Cleaning?",
     description:
       "• Expertise and Experience: Our team comprises highly skilled professionals with extensive experience in commercial cleaning services.\n• Environmental Stewardship: We prioritize environmental protection and integrate sustainable practices into every aspect of our services.\n• Diverse Service Offerings: From office cleaning to high-pressure cleaning, we provide a comprehensive range of services tailored to your specific needs.\n• Innovative Solutions: We are committed to continuous improvement, constantly seeking out new and innovative methods to enhance our services and promote sustainability.",
@@ -64,7 +88,7 @@ const CommercialCleaning = () => {
     <div className="relative mb-32">
       <div className="relative">
         <img
-          src="/office/office.jpg"
+          src="/services/commercial2.jpg"
           alt="Commercial Cleaning"
           className="w-full h-[400px] md:h-[500px] object-cover rounded-lg shadow-lg"
         />
@@ -99,6 +123,9 @@ const CommercialCleaning = () => {
               key={index}
               className="bg-white text-left p-6 rounded-lg shadow-lg"
             >
+              <div className="text-green-500 text-4xl mb-4 flex justify-center">
+                {section.icon}
+              </div>
               <h3 className="text-xl font-bold mb-4 poppins-bold text-black">
                 {section.title}
               </h3>

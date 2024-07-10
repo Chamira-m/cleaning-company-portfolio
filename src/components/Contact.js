@@ -154,11 +154,11 @@ const Contact = () => {
             8A/7-9 Futura Road, Keysborough Victoria 3173, Australia
           </p>
           <p className="mb-4 2xl:text-xl lg:text-lg md:text-base text-sm poppins-regular">
-            Email: admin@seynarpropertyservices.com.au
+            Email: admin@seynar.com.au
             <br />
             Telephone: 03 8774 0724
             <br />
-            Mobile: 04 092304022
+            Mobile: 04 0923 4022
           </p>
           <p className="mb-4 2xl:text-2xl lg:text-xl md:text-lg text-base poppins-bold">
             Office Hours:

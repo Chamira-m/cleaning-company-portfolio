@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const About = () => {
   return (
-    <div className="relative w-full min-h-screen flex items-center justify-center bg-gray-50">
+    <div className="relative w-full min-h-screen flex items-center justify-center bg-gray-50 mt-8">
       <div className="mt-10 lg:grid-cols-4 gap-8 pb-24 px-4">
         <motion.div
           initial={{ opacity: 0, y: 50 }}

@@ -46,7 +46,7 @@ const OfficeCleaning = () => {
     <div className="relative mb-32">
       <div className="relative">
         <img
-          src="/office/office.jpg"
+          src="/services/office2.jpeg"
           alt="Office Cleaning"
           className="w-full h-[400px] md:h-[500px] object-cover rounded-lg shadow-lg"
         />

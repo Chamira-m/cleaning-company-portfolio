@@ -7,49 +7,38 @@ const services = [
     title: "Office Cleaning",
     description:
       "Keep your workplace clean and hygienic with our office cleaning services. We work around your schedule for minimal disruption.",
-    image: "/services/office.jpg",
+    image: "/services/office1.jpeg",
     nav: "/office",
   },
   {
     title: "Commercial Cleaning",
     description:
       "Professional cleaning services for your home. Our team ensures a spotless living space with eco-friendly products.",
-    image: "/services/commercial.jpg",
+    image: "/services/commercial1.jpg",
     nav: "/CommrcialCleaning",
   },
   {
-    title: "Steam Cleaning",
+    title: "Steam Cleaning, Graffiti Removal, and High-Pressure Cleaning",
     description:
       "Crystal clear windows with our professional window cleaning services. We handle all types of windows safely and efficiently.",
-    image: "/services/service1.jpg",
+    image: "/services/steam1.jpeg",
     nav: "/SteamCleaning",
   },
+
   {
-    title: "High Pressure Cleaning",
-    description:
-      "Keep your workplace clean and hygienic with our office cleaning services. We work around your schedule for minimal disruption.",
-    image: "/services/service1.jpg",
-    nav: "/HighPressureCleaning",
-  },
-  {
-    title: "Mould Remediation",
+    title:
+      "Mould Remediation, Water Damage Remediation, and Carpet Restoration",
     description:
       "Our deep cleaning services cover every nook and cranny, providing a thorough clean that leaves your space immaculate.",
-    image: "/services/service1.jpg",
+    image: "/services/mould1.jpg",
     nav: "/MouldRemediation",
   },
+
   {
-    title: "Water Damagde Remediation",
+    title: "Floor Strip and Sealing, Hard Floors, Tile and Grout Cleaning",
     description:
       "Revitalize your carpets with our specialized carpet cleaning services. We remove stains, dirt, and allergens effectively.",
-    image: "/services/service1.jpg",
-    nav: "/WaterDamagdeRemediation",
-  },
-  {
-    title: "Slate, Stone & Vinyl floor Resealing",
-    description:
-      "Revitalize your carpets with our specialized carpet cleaning services. We remove stains, dirt, and allergens effectively.",
-    image: "/services/service1.jpg",
+    image: "/services/resealing1.jpeg",
     nav: "/Resealing",
   },
 ];

@@ -8,11 +8,18 @@ const ServicesList = () => {
   const services = [
     { name: "Office Cleaning", path: "/office" },
     { name: "Commercial Cleaning", path: "/commercial-cleaning" },
-    { name: "Steam Cleaning", path: "/Steamcleaning" },
-    { name: "High Pressure Cleaning", path: "/HighPressurecleaning" },
-    { name: "Mould Remediation", path: "/MouldRemediation" },
-    { name: "Water Damagde Remediation", path: "/WaterDamagdeRemediation" },
-    { name: "Slate, Stone & Vinyl Floor Resealing", path: "/Resealing" },
+    {
+      name: "Steam Cleaning",
+      path: "/Steamcleaning",
+    },
+    {
+      name: "Mould Remediation",
+      path: "/MouldRemediation",
+    },
+    {
+      name: "Tile and Grout Cleaning",
+      path: "/Resealing",
+    },
   ];
 
   return (

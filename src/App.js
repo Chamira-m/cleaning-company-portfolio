@@ -6,11 +6,9 @@ import Services from "./components/Services";
 import About from "./components/About";
 import OurWork from "./components/OurWork";
 import OfficeCleaning from "./components/services/OfficeCleaning";
-import CommrcialCleaning from "./components/services/CommrcialCleaning";
-import HighPressureCleaning from "./components/services/HighPressureCleaning";
+import CommrcialCleaning from "./components/services/CommercialCleaning";
 import MouldRemediation from "./components/services/MouldRemediation";
 import SteamCleaning from "./components/services/SteamCleaning";
-import WaterDamagdeRemediation from "./components/services/WaterDamagdeRemediation";
 import Resealing from "./components/services/Resealing";
 
 import Contact from "./components/Contact";
@@ -35,16 +33,10 @@ const App = () => {
             <Route path="/ourwork" element={<OurWork />} />
 
             <Route path="/CommrcialCleaning" element={<CommrcialCleaning />} />
-            <Route
-              path="/HighPressureCleaning"
-              element={<HighPressureCleaning />}
-            />
+
             <Route path="/MouldRemediation" element={<MouldRemediation />} />
             <Route path="/SteamCleaning" element={<SteamCleaning />} />
-            <Route
-              path="/WaterDamagdeRemediation"
-              element={<WaterDamagdeRemediation />}
-            />
+
             <Route path="/Resealing" element={<Resealing />} />
           </Routes>
         </main>

@@ -37,7 +37,6 @@ const OurWork = () => {
         moments, the heartfelt laughs, and everything in between.
       </h2>
       <div className="">
-        {/* hidden md:block */}
         <div className="grid md:gap-4 gap-2 mt-8 ">
           {/* First Row */}
           <div className="grid grid-cols-3 md:gap-4 gap-2">

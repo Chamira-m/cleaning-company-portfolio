@@ -28,7 +28,7 @@ const Header = () => {
           <img
             src="/logo2.png"
             alt="Company Logo"
-            className="2xl:w-36 2xl:h-10 lg:w-44 lg:h-12 md:w-36 md:h-14"
+            className="2xl:w-36 2xl:h-10 lg:w-32 lg:h-8 md:w-32 md:h-8 w-28 h-8 "
           />
         </Link>
 

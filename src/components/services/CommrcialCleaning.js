@@ -76,11 +76,11 @@ const CommercialCleaning = () => {
         </div>
       </div>
 
-      <div className="container text-black mx-auto p-4 mb-16 poppins-regular">
+      <div className="container text-black mx-auto p-4 poppins-regular">
         <h2 className="text-center text-2xl md:text-3xl lg:text-4xl poppins-bold mb-8">
           Commercial Cleaning at Seynar
         </h2>
-        <p className="text-center mb-8">
+        <p className="text-center">
           At Seynar, we offer top-tier commercial cleaning services designed to
           create clean, healthy, and productive environments for businesses of
           all sizes. Our team of experienced professionals utilizes advanced
@@ -89,9 +89,7 @@ const CommercialCleaning = () => {
         </p>
       </div>
 
-      <BlackLine />
-
-      <div className="container mx-auto py-16 px-4">
+      <div className="container mx-auto py-8 px-4">
         <h2 className="text-center text-2xl md:text-3xl lg:text-4xl poppins-bold mb-12">
           Our Commercial Cleaning Services
         </h2>
@@ -111,8 +109,9 @@ const CommercialCleaning = () => {
           ))}
         </div>
       </div>
+      <BlackLine />
 
-      <div className="container text-black mx-auto p-4 mb-16 poppins-regular">
+      <div className="container text-black mx-auto p-4 mb-16 mt-16 poppins-regular">
         <h2 className="text-center text-2xl md:text-3xl lg:text-4xl poppins-bold mb-8">
           Contact Us
         </h2>

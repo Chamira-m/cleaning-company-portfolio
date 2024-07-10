@@ -12,6 +12,7 @@ const ServicesList = () => {
     { name: "High Pressure Cleaning", path: "/HighPressurecleaning" },
     { name: "Mould Remediation", path: "/MouldRemediation" },
     { name: "Water Damagde Remediation", path: "/WaterDamagdeRemediation" },
+    { name: "Slate, Stone & Vinyl Floor Resealing", path: "/Resealing" },
   ];
 
   return (

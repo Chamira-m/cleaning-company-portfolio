@@ -11,6 +11,8 @@ import HighPressureCleaning from "./components/services/HighPressureCleaning";
 import MouldRemediation from "./components/services/MouldRemediation";
 import SteamCleaning from "./components/services/SteamCleaning";
 import WaterDamagdeRemediation from "./components/services/WaterDamagdeRemediation";
+import Resealing from "./components/services/Resealing";
+
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import "./App.css";
@@ -43,6 +45,7 @@ const App = () => {
               path="/WaterDamagdeRemediation"
               element={<WaterDamagdeRemediation />}
             />
+            <Route path="/Resealing" element={<Resealing />} />
           </Routes>
         </main>
         <Footer />

@@ -45,6 +45,13 @@ const services = [
     image: "/services/service1.jpg",
     nav: "/WaterDamagdeRemediation",
   },
+  {
+    title: "Slate, Stone & Vinyl floor Resealing",
+    description:
+      "Revitalize your carpets with our specialized carpet cleaning services. We remove stains, dirt, and allergens effectively.",
+    image: "/services/service1.jpg",
+    nav: "/Resealing",
+  },
 ];
 
 const Services = () => {

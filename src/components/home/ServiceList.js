@@ -16,7 +16,7 @@ const ServicesList = () => {
   ];
 
   return (
-    <div className="absolute right-0 mt-5 mr-4 text-right text-black lg:pb-16">
+    <div className="absolute right-0 mt-5 mr-4 text-right text-black lg:pb-20 pb-28">
       <h2 className="mb-2 text-sm 2xl:text-2xl lg:text-base poppins-bold">
         OUR SERVICES
       </h2>

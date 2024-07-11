@@ -67,7 +67,7 @@ const Home = () => {
   const images = [
     "/slides/slide1.jpg",
     "/slides/slide2.jpg",
-    "/slides/slide3.jpg",
+    "/slides/slide3.JPG",
   ];
 
   const sections = [

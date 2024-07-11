@@ -33,7 +33,7 @@ const About = () => {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
             <div className="bg-white p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-bold text-green-700 mb-2">
+              <h3 className="text-xl font-bold text-black mb-2">
                 Commercial Cleaning
               </h3>
               <p className="text-gray-700 mb-2">
@@ -45,7 +45,7 @@ const About = () => {
               </p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-bold text-green-700 mb-2">
+              <h3 className="text-xl font-bold text-black mb-2">
                 Office Cleaning
               </h3>
               <p className="text-gray-700 mb-2">
@@ -57,7 +57,7 @@ const About = () => {
               </p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-bold text-green-700 mb-2">
+              <h3 className="text-xl font-bold text-black mb-2">
                 Window Cleaning
               </h3>
               <p className="text-gray-700 mb-2">
@@ -69,7 +69,7 @@ const About = () => {
               </p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-bold text-green-700 mb-2">
+              <h3 className="text-xl font-bold text-black mb-2">
                 High Pressure Cleaning
               </h3>
               <p className="text-gray-700 mb-2">
@@ -81,7 +81,7 @@ const About = () => {
               </p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-bold text-green-700 mb-2">
+              <h3 className="text-xl font-bold text-black mb-2">
                 Floor Strip and Sealing
               </h3>
               <p className="text-gray-700 mb-2">
@@ -93,7 +93,7 @@ const About = () => {
               </p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-bold text-green-700 mb-2">
+              <h3 className="text-xl font-bold text-black mb-2">
                 Tile and Grout Cleaning
               </h3>
               <p className="text-gray-700 mb-2">
@@ -105,7 +105,7 @@ const About = () => {
               </p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-bold text-green-700 mb-2">
+              <h3 className="text-xl font-bold text-black mb-2">
                 Hard Floor Cleaning
               </h3>
               <p className="text-gray-700 mb-2">
@@ -117,7 +117,7 @@ const About = () => {
               </p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-bold text-green-700 mb-2">
+              <h3 className="text-xl font-bold text-black mb-2">
                 Graffiti Removal
               </h3>
               <p className="text-gray-700 mb-2">
@@ -129,7 +129,7 @@ const About = () => {
               </p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-bold text-green-700 mb-2">
+              <h3 className="text-xl font-bold text-black mb-2">
                 Carpet Restoration
               </h3>
               <p className="text-gray-700 mb-2">
@@ -141,7 +141,7 @@ const About = () => {
               </p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-bold text-green-700 mb-2">
+              <h3 className="text-xl font-bold text-black mb-2">
                 Mould Remediation
               </h3>
               <p className="text-gray-700 mb-2">
@@ -153,7 +153,7 @@ const About = () => {
               </p>
             </div>
           </div>
-          <h2 className="text-center text-2xl md:text-3xl lg:text-4xl font-semibold text-green-700 mb-4 poppins-bold">
+          <h2 className="text-center text-2xl md:text-3xl lg:text-4xl font-semibold text-black mb-4 poppins-bold">
             Our Commitment to Sustainability
           </h2>
           <p className="text-center text-gray-700 text-base md:text-lg mb-6 poppins-regular">
@@ -170,7 +170,7 @@ const About = () => {
             initiatives, positioning us as a leader in sustainable and
             innovative service provision.
           </p>
-          <h2 className="text-center text-2xl md:text-3xl lg:text-4xl font-semibold text-green-700 mb-4 poppins-bold">
+          <h2 className="text-center text-2xl md:text-3xl lg:text-4xl font-semibold text-black mb-4 poppins-bold">
             Why Choose Seynar?
           </h2>
           <ul className="list-disc list-inside text-left text-gray-700 text-base md:text-lg mb-6 poppins-regular">
@@ -195,7 +195,7 @@ const About = () => {
               services and promote sustainability.
             </li>
           </ul>
-          <h2 className="text-center text-2xl md:text-3xl lg:text-4xl font-semibold text-green-700 mb-4 poppins-bold">
+          <h2 className="text-center text-2xl md:text-3xl lg:text-4xl font-semibold text-black mb-4 poppins-bold">
             Our Vision for the Future
           </h2>
           <p className="text-center text-gray-700 text-base md:text-lg mb-6 poppins-regular">
@@ -212,6 +212,13 @@ const About = () => {
               src="/about/about.jpg"
               alt="Plant"
               className="w-24 h-24 md:w-36 md:h-36 lg:w-48 lg:h-48"
+            />
+          </div>
+          <div className="flex justify-center mt-8">
+            <img
+              src="/logo2.png"
+              alt="Plant"
+              className="w-16 h-6 md:w-28 md:h-10 lg:w-30 lg:h-12 2xl:w-32 2xl:h-14"
             />
           </div>
           <p className="text-center text-black text-base md:text-lg mt-8 poppins-bold">

@@ -136,7 +136,7 @@ const Home = () => {
             transition={{ duration: 0.5, delay: index * 0.1 }}
             className="2xl:p-6 p-4 md:mx-1 mx-5 bg-slate-100 text-black rounded-2xl shadow-lg flex flex-col items-center "
           >
-            <div className="text-green-500 text-4xl mb-4">{section.icon}</div>
+            <div className="text-black text-4xl mb-4">{section.icon}</div>
             <h2 className="2xl:text-2xl text-lg font-semibold mb-4 text-center poppins-semibold">
               {section.title}
             </h2>

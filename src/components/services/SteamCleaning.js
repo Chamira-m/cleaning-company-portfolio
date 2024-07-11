@@ -127,7 +127,7 @@ const SteamCleaning = () => {
               key={index}
               className="bg-white text-left p-6 rounded-lg shadow-lg"
             >
-              <div className="text-green-500 text-4xl mb-4 flex justify-center">
+              <div className="text-black text-4xl mb-4 flex justify-center">
                 {section.icon}
               </div>
               <h3 className="text-xl font-bold mb-4 poppins-bold text-black">

@@ -1,21 +1,54 @@
 import React from "react";
+import { FaBroom, FaTint, FaFillDrip, FaLeaf } from "react-icons/fa";
 import BlackLine from "../shared/BlackLine";
 
 const resealingSections = [
   {
+    icon: <FaBroom />,
     title: "Floor Strip and Sealing",
-    description:
-      "Perfect for maintaining and restoring the beauty of your vinyl, linoleum, and other resilient flooring. Our process involves thorough cleaning, stripping, scrubbing, and sealing with high-quality sealants.",
+    description: `
+      Our Floor Strip and Sealing service is perfect for maintaining and restoring the beauty of your vinyl, linoleum, and other resilient flooring. Over time, floors can accumulate layers of old sealant, wax, and dirt, leading to a dull and worn appearance. Our process involves:
+      \n• Thorough Cleaning: We start by thoroughly cleaning the floor to remove surface dirt and debris.
+      \n• Stripping: Next, we apply a professional-grade stripping solution to remove old layers of wax and sealant, exposing the bare floor.
+      \n• Scrubbing: We then scrub the floor to ensure all residues are removed.
+      \n• Sealing: Finally, we apply high-quality sealants to protect the floor and restore its shine and durability.
+      \nWith our premium subscription, we exclusively use eco-friendly products, ensuring that your floors are not only clean and beautiful but also safe for the environment.
+    `,
   },
   {
+    icon: <FaTint />,
     title: "Hard Floor Cleaning",
-    description:
-      "Ideal for a variety of surfaces, including footpaths, car parks, and other high-traffic areas. Our process includes assessment, high-pressure cleaning, eco-friendly products, and finishing touches.",
+    description: `
+      Our Hard Floor Cleaning service is ideal for a variety of surfaces, including footpaths, car parks, and other high-traffic areas. These areas often require more intensive cleaning due to their exposure to the elements and heavy use. Our process includes:
+      \n• Assessment: We assess the condition of the hard floor to determine the best cleaning approach.
+      \n• High-Pressure Cleaning: Using advanced high-pressure cleaning equipment, we remove dirt, grime, oil stains, and other contaminants.
+      \n• Eco-Friendly Products: For our premium subscription customers, we use environmentally friendly cleaning solutions to ensure the safety of your surfaces and the surrounding environment.
+      \n• Finishing Touches: After cleaning, we can apply protective coatings to enhance the durability and appearance of your hard floors.
+      \nThis service is perfect for maintaining the cleanliness and safety of exterior surfaces, making them look new.
+    `,
   },
   {
+    icon: <FaFillDrip />,
     title: "Tile and Grout Cleaning",
-    description:
-      "Designed to rejuvenate tiles and grout, restoring their original beauty. Our process includes inspection, deep cleaning, grout sealing, and finishing.",
+    description: `
+      Tiles and grout can become stained and discolored over time, detracting from the overall appearance of your space. Our Tile and Grout Cleaning service is designed to rejuvenate these surfaces and restore their original beauty. Our process includes:
+      \n• Inspection: We begin by inspecting the tiles and grout to identify any problem areas.
+      \n• Deep Cleaning: Using specialized equipment and cleaning solutions, we deep clean the tiles and grout to remove embedded dirt, stains, and mold.
+      \n• Grout Sealing: After cleaning, we can apply a grout sealant to protect against future staining and make maintenance easier.
+      \n• Finishing: We ensure that all residues are removed and that the tiles are left sparkling clean.
+      \nOur premium subscription customers benefit from the use of eco-friendly products, ensuring a safe and environmentally responsible cleaning process.
+    `,
+  },
+  {
+    icon: <FaLeaf />,
+    title: "Why Choose Seynar?",
+    description: `
+      • Expertise and Experience: Our team comprises highly skilled professionals with extensive experience in floor care and cleaning services.
+      \n• Environmental Stewardship: We prioritize environmental protection and integrate sustainable practices into every aspect of our services.
+      \n• Quality Assurance: We adhere to relevant Australian cleaning standards and certifications, ensuring the highest level of service quality.
+      \n• Eco-Friendly Options: With our premium subscription, you can opt for exclusively eco-friendly cleaning products.
+      \nBy choosing Seynar, you can trust that your floors are in capable hands. Contact us today to learn more about our services and how we can help you maintain beautiful, clean, and sustainable floors.
+    `,
   },
 ];
 
@@ -60,6 +93,9 @@ const Resealing = () => {
               key={index}
               className="bg-white text-left p-6 rounded-lg shadow-lg"
             >
+              <div className="text-green-500 text-4xl mb-4 flex justify-center">
+                {section.icon}
+              </div>
               <h3 className="text-xl font-bold mb-4 poppins-bold text-black">
                 {section.title}
               </h3>

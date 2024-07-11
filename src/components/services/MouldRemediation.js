@@ -1,36 +1,50 @@
 import React from "react";
+import {
+  FaCheckCircle,
+  FaCog,
+  FaFileAlt,
+  FaLeaf,
+  FaRecycle,
+  FaSplotch,
+} from "react-icons/fa";
 import BlackLine from "../shared/BlackLine";
 
 const mouldRemediationSections = [
   {
-    title: "Assessment and Inspection",
+    icon: <FaSplotch />,
+    title: "Mould Remediation",
     description:
-      "Our team conducts a thorough assessment and inspection to identify the source and extent of mould infestation. This allows us to develop a comprehensive remediation plan tailored to your specific needs.",
+      "• Identification and Assessment: We begin with a thorough assessment to identify the source and extent of mould growth.\n• Containment and Removal: Our team uses controlled procedures to contain the mould and prevent its spread during removal.\n• Air Filtration and Cleaning: High-efficiency air filtration devices are used to cleanse the air of mould spores and other contaminants.\n• Restoration: Affected areas are restored to their original condition using eco-friendly materials and practices.",
   },
   {
-    title: "Containment and Ventilation",
+    icon: <FaRecycle />,
+    title: "Water Damage Remediation",
     description:
-      "To prevent the spread of mould spores, we use advanced containment and ventilation techniques. This ensures that the affected areas are isolated, minimizing cross-contamination.",
+      "• Rapid Response: Quick action is crucial. Seynar offers immediate response services to mitigate water damage and prevent further deterioration.\n• Water Extraction and Drying: State-of-the-art equipment is used for water extraction, followed by strategic drying methods to ensure thorough moisture removal.\n• Dehumidification: We implement dehumidification processes to stabilize the environment and prevent secondary water damage.\n• Damage Repair: Comprehensive repair services are provided to restore areas damaged by water.",
   },
   {
-    title: "Mould Removal",
+    icon: <FaLeaf />,
+    title: "Carpet Restoration",
     description:
-      "Using specialized equipment and eco-friendly cleaning solutions, we safely remove mould from your property. Our methods are effective and safe, ensuring that your environment is restored to a healthy state.",
+      "• Deep Cleaning: Carpets are deep cleaned to remove all traces of dirt, stains, and allergens.\n• Damage Repair: We repair areas of the carpet that are worn or damaged.\n• Deodorization and Sanitization: Carpets are treated with eco-friendly deodorizers and sanitizers to restore freshness and ensure they are free from harmful bacteria.",
   },
   {
-    title: "Cleaning and Disinfection",
+    icon: <FaFileAlt />,
+    title: "Customized Solutions",
     description:
-      "We clean and disinfect all affected surfaces to remove any remaining mould spores. Our process includes HEPA vacuuming and the application of antimicrobial treatments to prevent future mould growth.",
+      "Seynar understands that each situation is unique. We provide customized solutions tailored to the specific needs of your property, whether you require emergency response or routine maintenance.",
   },
   {
-    title: "Restoration and Repairs",
+    icon: <FaCog />,
+    title: "Meeting Australian Standards",
     description:
-      "Our team is equipped to handle any necessary repairs and restoration work following mould remediation. We ensure that your property is returned to its original condition, or better.",
+      "Seynar is dedicated to helping our customers achieve and maintain relevant Australian cleaning standards. Our services comply with the following certifications:\n• ISO 14001: Environmental Management Systems\n• AS/NZS 4801: Occupational Health and Safety Management Systems\n• ISO 9001: Quality Management Systems\n• GECA (Good Environmental Choice Australia): Certification for environmentally preferable products and services\n• NSW Health Cleaning Service Standards: Compliance with state health and hygiene standards.",
   },
   {
-    title: "Preventative Measures",
+    icon: <FaCheckCircle />,
+    title: "Why Choose Seynar?",
     description:
-      "To help prevent future mould issues, we offer advice and solutions for moisture control and ventilation improvements. Our goal is to provide long-term protection for your property.",
+      "• Expertise and Experience: Our professionals are highly trained and experienced in dealing with all aspects of mould, water damage, and carpet issues.\n• Commitment to Sustainability: We prioritize the use of safe, sustainable products and practices in all our remediation and restoration services.\n• Comprehensive Service Range: From initial assessment to final restoration, Seynar offers a full spectrum of services to address and resolve environmental damage.\n• Certified and Insured: Seynar holds all necessary certifications and insurances for safe and compliant operations.",
   },
 ];
 
@@ -66,7 +80,7 @@ const MouldRemediation = () => {
 
       <div className="container mx-auto py-8 px-4">
         <h2 className="text-center text-2xl md:text-3xl lg:text-4xl poppins-bold mb-12">
-          Our Mould Remediation Services
+          Our Remediation and Restoration Services
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-8">
           {mouldRemediationSections.map((section, index) => (
@@ -74,6 +88,9 @@ const MouldRemediation = () => {
               key={index}
               className="bg-white text-left p-6 rounded-lg shadow-lg"
             >
+              <div className="text-green-500 text-4xl mb-4 flex justify-center">
+                {section.icon}
+              </div>
               <h3 className="text-xl font-bold mb-4 poppins-bold text-black">
                 {section.title}
               </h3>

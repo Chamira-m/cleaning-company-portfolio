@@ -19,6 +19,10 @@ const OurWork = () => {
     { src: "gallery/gallery14.jpg", alt: "Work 14" },
     { src: "gallery/gallery15.jpg", alt: "Work 15" },
     { src: "gallery/gallery16.jpg", alt: "Work 16" },
+    { src: "gallery/gallery17.jpg", alt: "Work 17" },
+    { src: "gallery/gallery18.jpg", alt: "Work 18" },
+    { src: "gallery/gallery19.jpg", alt: "Work 19" },
+    { src: "gallery/gallery20.jpg", alt: "Work 20" },
   ];
 
   return (
@@ -51,8 +55,8 @@ const OurWork = () => {
               <div className="overflow-hidden h-full rounded-lg">
                 <img
                   className="bg-blend-screen block w-full transition-transform transform hover:scale-105 h-full"
-                  src={images[1].src}
-                  alt={images[1].alt}
+                  src={images[6].src}
+                  alt={images[6].alt}
                 />
               </div>
             </div>
@@ -67,15 +71,15 @@ const OurWork = () => {
               <div className="overflow-hidden h-full rounded-lg">
                 <img
                   className="bg-blend-screen block w-full transition-transform transform hover:scale-105 h-full"
-                  src={images[2].src}
-                  alt={images[2].alt}
+                  src={images[16].src}
+                  alt={images[16].alt}
                 />
               </div>
               <div className="overflow-hidden h-full rounded-lg">
                 <img
                   className="bg-blend-screen block w-full transition-transform transform hover:scale-105 h-full"
-                  src={images[3].src}
-                  alt={images[3].alt}
+                  src={images[17].src}
+                  alt={images[17].alt}
                 />
               </div>
             </div>
@@ -94,15 +98,15 @@ const OurWork = () => {
               <div className="overflow-hidden h-full rounded-lg">
                 <img
                   className="bg-blend-screen block w-full transition-transform transform hover:scale-105 h-full"
-                  src={images[5].src}
-                  alt={images[5].alt}
+                  src={images[18].src}
+                  alt={images[18].alt}
                 />
               </div>
               <div className="overflow-hidden h-full rounded-lg">
                 <img
                   className="bg-blend-screen block w-full transition-transform transform hover:scale-105 h-full"
-                  src={images[6].src}
-                  alt={images[6].alt}
+                  src={images[19].src}
+                  alt={images[19].alt}
                 />
               </div>
             </div>

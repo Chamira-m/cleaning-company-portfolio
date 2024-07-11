@@ -40,6 +40,7 @@ const Contact = () => {
         }
       );
   };
+
   return (
     <div className="container mx-auto p-4 2xl:mt-16 lg:mt-10 md:mt-8 mt-8 mb-28 text-black">
       <motion.h1
@@ -151,12 +152,13 @@ const Contact = () => {
             Seynar Property Services
           </p>
           <p className="mb-4 2xl:text-xl lg:text-lg md:text-base text-sm poppins-regular">
-            8A/7-9 Futura Road, Keysborough Victoria 3173, Australia
+            Suite 540, Waterman Caribbean Park, 44 Lakeview Drive, Scoresby,
+            Victoria 3179
           </p>
           <p className="mb-4 2xl:text-xl lg:text-lg md:text-base text-sm poppins-regular">
             Email: admin@seynar.com.au
-            <br />
-            Telephone: 03 8774 0724
+            {/* <br />
+            Telephone: 03 8774 0777 */}
             <br />
             Mobile: 04 0923 4022
           </p>
@@ -172,14 +174,13 @@ const Contact = () => {
             These are just our office hours but we are functional 24/7 for your
             convenience.
           </p>
-          {/* Google Maps Embed */}
         </motion.div>
       </div>
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.2 }}
-        className=" bg-gray-800 rounded-lg shadow-lg text-white"
+        className=" bg-gray-800 rounded-lg shadow-lg text-white mt-8"
       >
         <div className="aspect-w-16 aspect-h-9 2xl:mt-10 lg-mt-8 md:mt-5 mt-4">
           <iframe
@@ -187,7 +188,7 @@ const Contact = () => {
             className="w-full h-96"
             loading="lazy"
             allowFullScreen
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3152.4438658333426!2d144.96332!3d-37.814107!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f10!3m3!1m2!1s0x6ad642f56ed89f1d%3A0x3fcb4d4bcfcca96c!2sMelbourne%20VIC%2C%20Australia!5e0!3m2!1sen!2sus!4v1622648273868!5m2!1sen!2sus"
+            src={`https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3147.6994636464465!2d145.21687267673235!3d-37.91408683977967!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad63f28682c4277%3A0x2055308d07e99449!2sWaterman%20Caribbean%20Park!5e0!3m2!1sen!2slk!4v1720688425537!5m2!1sen!2slk`}
           ></iframe>
         </div>
       </motion.div>

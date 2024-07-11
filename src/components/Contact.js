@@ -149,7 +149,7 @@ const Contact = () => {
             soon as we can.
           </p>
           <p className="mb-4 2xl:text-2xl lg:text-xl md:text-lg text-base poppins-bold">
-            Seynar Property Services
+            Seynar
           </p>
           <p className="mb-4 2xl:text-xl lg:text-lg md:text-base text-sm poppins-regular">
             Suite 540, Waterman Caribbean Park, 44 Lakeview Drive, Scoresby,

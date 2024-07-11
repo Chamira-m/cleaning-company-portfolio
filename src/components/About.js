@@ -11,14 +11,14 @@ const About = () => {
           transition={{ duration: 0.5 }}
           className="2xl:p-6 md:mx-1 bg-gray-50 text-black flex flex-col items-center z-10 p-8 md:p-16 lg:p-24 rounded-xl shadow-lg max-w-6xl mx-4"
         >
-          <h1 className="text-center text-3xl md:text-4xl lg:text-5xl font-bold text-black mb-6 poppins-bold">
+          <h1 className="text-center 2xl:text-4xl text-xl font-bold text-black mb-6 poppins-bold">
             OUR GOAL
           </h1>
-          <h2 className="text-center text-2xl md:text-3xl lg:text-4xl poppins-bold mb-8">
+          <h2 className="text-center text-base md:text-xl lg:text-2xl poppins-bold mb-8">
             Welcome to Seynar - Pioneering Sustainable Solutions for a Greener
             Australia
           </h2>
-          <h2 className="text-center text-2xl md:text-3xl lg:text-4xl font-semibold text-black mb-4 poppins-bold">
+          <h2 className="text-center text-xl md:text-2xl lg:text-3xl font-semibold text-black mb-4 poppins-bold">
             Our Mission
           </h2>
           <p className="text-center text-gray-700 text-base md:text-lg mb-6 poppins-regular">
@@ -28,7 +28,7 @@ const About = () => {
             committed to providing superior cleaning services while championing
             sustainability and ecological responsibility.
           </p>
-          <h2 className="text-center text-2xl md:text-3xl lg:text-4xl font-semibold text-black mb-4 poppins-bold">
+          <h2 className="text-center text-xl md:text-2xl lg:text-3xl font-semibold text-black mb-4 poppins-bold">
             Our Comprehensive Cleaning Services
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
@@ -153,7 +153,7 @@ const About = () => {
               </p>
             </div>
           </div>
-          <h2 className="text-center text-2xl md:text-3xl lg:text-4xl font-semibold text-black mb-4 poppins-bold">
+          <h2 className="text-center text-xl md:text-2xl lg:text-3xl font-semibold text-black mb-4 poppins-bold">
             Our Commitment to Sustainability
           </h2>
           <p className="text-center text-gray-700 text-base md:text-lg mb-6 poppins-regular">
@@ -170,7 +170,7 @@ const About = () => {
             initiatives, positioning us as a leader in sustainable and
             innovative service provision.
           </p>
-          <h2 className="text-center text-2xl md:text-3xl lg:text-4xl font-semibold text-black mb-4 poppins-bold">
+          <h2 className="text-center text-xl md:text-2xl lg:text-3xl font-semibold text-black mb-4 poppins-bold">
             Why Choose Seynar?
           </h2>
           <ul className="list-disc list-inside text-left text-gray-700 text-base md:text-lg mb-6 poppins-regular">
@@ -195,7 +195,7 @@ const About = () => {
               services and promote sustainability.
             </li>
           </ul>
-          <h2 className="text-center text-2xl md:text-3xl lg:text-4xl font-semibold text-black mb-4 poppins-bold">
+          <h2 className="text-center text-xl md:text-2xl lg:text-3xl font-semibold text-black mb-4 poppins-bold">
             Our Vision for the Future
           </h2>
           <p className="text-center text-gray-700 text-base md:text-lg mb-6 poppins-regular">
@@ -218,7 +218,7 @@ const About = () => {
             <img
               src="/logo2.png"
               alt="Plant"
-              className="w-16 h-6 md:w-28 md:h-10 lg:w-30 lg:h-12 2xl:w-32 2xl:h-14"
+              className="w-16 h-6 md:w-32 md:h-10 lg:w-30 lg:h-12 2xl:w-32 2xl:h-10"
             />
           </div>
           <p className="text-center text-black text-base md:text-lg mt-8 poppins-bold">

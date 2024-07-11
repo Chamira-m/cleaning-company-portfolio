@@ -19,25 +19,25 @@ const expertiseSections = [
     icon: <FaHandshake />,
     title: "Ethical & compliant provider",
     description:
-      "At Seynar, we pride ourselves on being an ethical and compliant provider in the cleaning and maintenance industry. We strictly adhere to all legal and regulatory requirements, ensuring our practices not only meet but exceed industry standards. Our commitment to ethics is reflected in our transparent business dealings, fair labor practices, and dedication to environmental sustainability. We conduct regular audits and training sessions to ensure our team is well-versed in compliance and ethics, guaranteeing that our services are delivered responsibly and with integrity. Trust Seynar to be your partner in maintaining a clean, safe, and ethically managed environment.",
+      "Seynar is an ethical and compliant cleaning and maintenance provider, adhering to all legal and regulatory standards. We exceed industry requirements through transparent business practices, fair labor, and environmental sustainability. Regular audits and training ensure our team delivers responsible, integrity-driven services. Trust Seynar for a clean, safe, and ethically managed environment.",
   },
   {
     icon: <FaUserShield />,
     title: "Our people & safety program",
     description:
-      "At Seynar, our People & Safety program is at the heart of our operations, emphasizing the well-being and development of our staff while maintaining the highest safety standards. We invest in continuous training and development programs to ensure our team is skilled, knowledgeable, and equipped to handle any situation safely and effectively. We adhere strictly to workplace safety regulations, promoting a culture of safety that minimizes risks for both our employees and clients. This comprehensive approach ensures that our workforce is not only highly capable but also motivated and secure in their roles, contributing to the overall excellence and reliability of our services.",
+      "At Seynar, our People & Safety program prioritizes staff well-being and development while maintaining top safety standards. We invest in ongoing training to ensure our team is skilled and effective. Strict adherence to safety regulations fosters a culture minimizing risks, ensuring a capable, motivated, and secure workforce, contributing to our service excellence and reliability.",
   },
   {
     icon: <FaLightbulb />,
     title: "Premium Eco-Friendly Office Cleaning",
     description:
-      "Seynar's premium subscription for office cleaning delivers an exceptional service tailored for businesses that prioritize both impeccable cleanliness and environmental responsibility. This subscription exclusively utilizes eco-friendly cleaning products and advanced, sustainable techniques, ensuring that every cleaning session contributes positively to your company’s environmental goals. Clients benefit from comprehensive cleaning coverage, meticulous attention to detail, and dedicated customer support. Designed for high-traffic areas and high-stakes business environments, our premium office cleaning service maintains your workspace in pristine condition, enhancing the well-being and productivity of your team while upholding your commitment to sustainability.",
+      "Seynar's premium office cleaning service offers exceptional, eco-friendly cleaning tailored for businesses prioritizing cleanliness and sustainability. Using advanced, sustainable techniques, it ensures comprehensive coverage and meticulous detail. Clients enjoy enhanced well-being and productivity in high-traffic, high-stakes environments, with dedicated customer support and a commitment to environmental goals.",
   },
   {
     icon: <FaBuilding />,
     title: "Servicing high profile tenancies",
     description:
-      "At Seynar, we specialize in servicing high-profile tenancies, delivering impeccable cleaning and maintenance services that meet the exacting standards required by prestigious clients. Our team is trained to handle the unique challenges and demands of high-profile environments, ensuring discretion, precision, and exceptional care in every task. We use state-of-the-art equipment and techniques to maintain the pristine condition of these properties, while our commitment to confidentiality and professionalism makes us a trusted partner for clients with high visibility and specific needs. Whether it’s luxury commercial spaces, high-end residential properties, or corporate headquarters, Seynar provides a tailored service that upholds the stature and image of every high-profile tenancy.",
+      "At Seynar, we excel in servicing high-profile tenancies, providing impeccable cleaning and maintenance that meet the exacting standards of prestigious clients. Our trained team handles unique challenges with discretion, precision, and exceptional care. Utilizing state-of-the-art equipment, we maintain pristine conditions while ensuring confidentiality and professionalism. We tailor our services to uphold the stature of luxury commercial spaces, high-end residential properties, and corporate headquarters.",
   },
 ];
 
@@ -46,7 +46,7 @@ const OfficeCleaning = () => {
     <div className="relative mb-32">
       <div className="relative">
         <img
-          src="/services/office3.jpg"
+          src="/services/office4.jpg"
           alt="Office Cleaning"
           className="w-full h-[400px] md:h-[500px] object-cover rounded-lg shadow-lg"
         />
@@ -65,25 +65,20 @@ const OfficeCleaning = () => {
           {/* Ensure text alignment is left */}
           <div className="flex-1 lg:p-8 md:p-6 p-2">
             <p>
-              At Seynar, we take pride in delivering high-quality commercial
-              cleaning services to high-profile tenants, managing agents, and
-              property owners. As we expand into Melbourne, we bring with us a
-              wealth of experience and a proven track record of excellence and
-              sustainability. This expertise ensures that both new and existing
-              clients in the region can trust us to maintain the highest
+              At Seynar, we provide high-quality commercial cleaning services
+              for high-profile clients. As we expand into Melbourne, our wealth
+              of experience and proven track record of excellence and
+              sustainability ensure that new and existing clients receive top
               standards of cleanliness and service.
             </p>
           </div>
           <div className="flex-1 lg:p-8 md:p-6 p-2 lg:border-l-2 lg:border-r-2 border-black">
             <p>
-              At Seynar, we specialize in providing top-tier cleaning services
-              for a diverse array of premium and A-Grade buildings. Our
-              expertise encompasses brand new developments, mixed-use precincts,
-              end-of-trip facilities, and activity-based working environments.
-              Our skilled team is well-equipped to meet the unique demands of
-              these sophisticated spaces, ensuring that every facility we
-              service maintains the highest standards of cleanliness
-              and presentation.
+              At Seynar, we provide top-tier cleaning services for premium and
+              A-Grade buildings, including new developments, mixed-use
+              precincts, end-of-trip facilities, and activity-based work
+              environments. Our skilled team ensures these sophisticated spaces
+              maintain the highest standards of cleanliness and presentation.
             </p>
           </div>
           <div className="flex-1 lg:p-8 md:p-6 p-2">

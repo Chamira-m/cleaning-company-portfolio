@@ -6,21 +6,21 @@ const services = [
   {
     title: "Office Cleaning",
     description:
-      "Keep your workplace clean and hygienic with our office cleaning services. We work around your schedule for minimal disruption.",
+      "Follow safety protocols, use PPE and eco-friendly products, perform detailed cleaning tasks, maintain professionalism, seek client feedback, and engage in ongoing training.",
     image: "/services/office1.jpeg",
     nav: "/office",
   },
   {
     title: "Commercial Cleaning",
     description:
-      "Professional cleaning services for your home. Our team ensures a spotless living space with eco-friendly products.",
-    image: "/services/commercial1.jpg",
+      "Professional commercial cleaning services with eco-friendly products, detailed attention, safety adherence, customized plans, and ongoing training for superior cleanliness.",
+    image: "/services/commercial1.jpeg",
     nav: "/CommrcialCleaning",
   },
   {
-    title: "Steam Cleaning, Graffiti Removal, and High-Pressure Cleaning",
+    title: "High-Pressure Cleaning",
     description:
-      "Crystal clear windows with our professional window cleaning services. We handle all types of windows safely and efficiently.",
+      "Deliver thorough, efficient cleaning using high-pressure techniques, adhere to safety protocols, use eco-friendly products, and maintain professionalism",
     image: "/services/steam1.jpeg",
     nav: "/SteamCleaning",
   },
@@ -29,7 +29,7 @@ const services = [
     title:
       "Mould Remediation, Water Damage Remediation, and Carpet Restoration",
     description:
-      "Our deep cleaning services cover every nook and cranny, providing a thorough clean that leaves your space immaculate.",
+      "Restore properties efficiently, using advanced techniques and eco-friendly products. Address water damage, mold, and more with professionalism and expertise.",
     image: "/services/mould1.jpg",
     nav: "/MouldRemediation",
   },
@@ -37,7 +37,7 @@ const services = [
   {
     title: "Floor Strip and Sealing, Hard Floors, Tile and Grout Cleaning",
     description:
-      "Revitalize your carpets with our specialized carpet cleaning services. We remove stains, dirt, and allergens effectively.",
+      "Restore surfaces with thorough strip and seal, eco-friendly products, and advanced techniques. Ensure spotless hard floors and pristine tiles.",
     image: "/services/resealing1.jpeg",
     nav: "/Resealing",
   },

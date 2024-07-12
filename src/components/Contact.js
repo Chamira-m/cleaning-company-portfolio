@@ -26,8 +26,8 @@ const Contact = () => {
       return;
     }
     emailjs
-      .sendForm("service_268bgri", "template_crfefqv", form.current, {
-        publicKey: "QMkojJ3_av80wFxK1",
+      .sendForm("service_ncbrlaw", "template_jwdyb89", form.current, {
+        publicKey: "_aUKreTu2MM8i_071",
       })
       .then(
         () => {

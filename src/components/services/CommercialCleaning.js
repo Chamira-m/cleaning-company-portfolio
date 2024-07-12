@@ -1,16 +1,15 @@
 import React from "react";
 import {
   FaBuilding,
-  FaTrashAlt,
   FaWindowMaximize,
-  FaCar,
   FaSplotch,
-  FaBroom,
   FaRecycle,
   FaLeaf,
   FaFileAlt,
   FaCog,
   FaCheckCircle,
+  FaWarehouse,
+  FaSchool,
 } from "react-icons/fa";
 import BlackLine from "../shared/BlackLine";
 
@@ -22,28 +21,29 @@ const commercialCleaningSections = [
       "Our office cleaning services ensure that your workspace is clean, organized, and welcoming. We handle everything from dusting and vacuuming to sanitizing high-touch areas, creating a healthy environment for your employees and visitors.",
   },
   {
-    icon: <FaTrashAlt />,
-    title: "Restroom Cleaning",
+    icon: <FaSchool />,
+    title: "Builders Cleaning",
     description:
-      "We provide thorough restroom cleaning services, including disinfection and restocking of supplies, to maintain hygiene and comfort for your staff and guests.",
+      "At Seynar, our builders cleaning services are designed to transform construction sites into pristine, ready-to-use spaces. We understand the unique challenges posed by post-construction environments and utilize specialized techniques to remove dust, debris, and residue left behind by builders. Our team is equipped with advanced cleaning tools and eco-friendly products to ensure thorough cleaning of all surfaces, including floors, windows, and fixtures. We adhere to st",
   },
   {
-    icon: <FaCar />,
-    title: "Carpet Cleaning",
+    icon: <FaWarehouse />,
+    title: "Warehouse Cleaning",
     description:
-      "Our carpet cleaning services include regular maintenance and deep cleaning to remove dirt, stains, and allergens, extending the life of your carpets and improving indoor air quality.",
+      "Seynar offers comprehensive warehouse cleaning services to maintain a clean, safe, and efficient workspace. Our services include deep cleaning, high-pressure cleaning, equipment and machinery cleaning, racking and shelving cleaning, and restroom and break area cleaning. We prioritize safety, productivity, and regulatory compliance while using eco-friendly products. Customized plans and premium subscriptions ensure tailored, sustainable solutions. Choose Seynar for expert, reliable warehouse cleaning.",
+  },
+
+  {
+    icon: <FaSchool />,
+    title: "School Cleaning",
+    description:
+      "Seynar provides comprehensive school cleaning services to maintain a safe, clean, and conducive learning environment. Our services include regular classroom cleaning, restroom sanitation, cafeteria maintenance, and cleaning of hallways, common areas, playgrounds, and gyms. We prioritize safety, hygiene, and regulatory compliance, using eco-friendly products and sustainable practices. Customized cleaning plans ensure minimal disruption. Choose Seynar for reliable, high-quality school cleaning services.",
   },
   {
     icon: <FaWindowMaximize />,
     title: "Window Cleaning",
     description:
       "Clean windows enhance the appearance of your building and allow more natural light into your workspace. Our professional window cleaning services ensure streak-free, spotless results.",
-  },
-  {
-    icon: <FaBroom />,
-    title: "Floor Cleaning and Maintenance",
-    description:
-      "We offer specialized cleaning and maintenance for various types of flooring, including vinyl, tile, and hardwood. Our services include floor stripping and sealing, tile and grout cleaning, and regular maintenance to keep your floors looking their best.",
   },
   {
     icon: <FaSplotch />,
@@ -73,7 +73,7 @@ const commercialCleaningSections = [
     icon: <FaCog />,
     title: "Meeting Australian Standards",
     description:
-      "Seynar is dedicated to helping our customers achieve and maintain relevant Australian cleaning standards. Our services comply with the following certifications:\n\n• ISO 14001: Environmental Management Systems\n• AS/NZS 4801: Occupational Health and Safety Management Systems\n• ISO 9001: Quality Management Systems\n• GECA (Good Environmental Choice Australia): Certification for environmentally preferable products and services\n• NSW Health Cleaning Service Standards: Compliance with state health and hygiene standards\n\nBy adhering to these standards, we ensure that our cleaning practices not only meet but exceed industry expectations, providing our clients with the highest level of service and quality assurance.",
+      "Commitment to Australian Cleaning StandardsAt Seynar, we are committed to upholding the highest Australian cleaning standards to ensure exceptional service and quality assurance for our clients. By strictly adhering to industry regulations, we guarantee that our cleaning practices are not only effective but also environmentally responsible and safe. This dedication to compliance reflects our ongoing commitment to excellence, allowing us to provide services that meet and exceed our clients' expe",
   },
   {
     icon: <FaCheckCircle />,
@@ -88,7 +88,7 @@ const CommercialCleaning = () => {
     <div className="relative mb-32">
       <div className="relative">
         <img
-          src="/services/commercial2.jpg"
+          src="/services/commercial2.jpeg"
           alt="Commercial Cleaning"
           className="w-full h-[400px] md:h-[500px] object-cover rounded-lg shadow-lg"
         />
@@ -102,7 +102,7 @@ const CommercialCleaning = () => {
 
       <div className="container text-black mx-auto p-4 poppins-regular">
         <h2 className="text-center text-2xl md:text-3xl lg:text-4xl poppins-bold mb-8">
-          Commercial Cleaning at Seynar
+          Commercial Cleaning
         </h2>
         <p className="text-center">
           At Seynar, we offer top-tier commercial cleaning services designed to

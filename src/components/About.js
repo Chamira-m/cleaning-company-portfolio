@@ -29,6 +29,35 @@ const About = () => {
             sustainability and ecological responsibility.
           </p>
           <h2 className="text-center text-xl md:text-2xl lg:text-3xl font-semibold text-black mb-4 poppins-bold">
+            Honoring First Nations Culture
+          </h2>
+          <div className="flex justify-center space-x-8 mb-1">
+            <img
+              src="/about/aboriginal.png"
+              alt="image1"
+              className="w-20 h-14 md:w-24 md:h-16 lg:w-24 lg:h-16 xl:w-24 xl:h-16 2xl:w-28 2xl:h-20"
+            />
+            <img
+              src="/about/Torres_Strait_Islanders.png"
+              alt="image2"
+              className="w-20 h-14 md:w-24 md:h-16 lg:w-24 lg:h-16 xl:w-24 xl:h-16 2xl:w-28 2xl:h-20"
+            />
+          </div>
+          <p className="text-center text-gray-700 text-base md:text-lg mb-6 poppins-regular">
+            At Seynar, we honor and respect the rich cultural heritage of
+            Australia's First Nations peoples. We acknowledge the traditional
+            custodians of the lands where we operate and pay our respects to
+            their Elders, past, present, and emerging. We are committed to
+            fostering a deep understanding and appreciation of First Nations
+            cultures through our practices and interactions. Our dedication to
+            cultural respect is reflected in our inclusive approach, ensuring
+            that the voices and traditions of Aboriginal and Torres Strait
+            Islander communities are recognized and valued. By embracing
+            cultural awareness, we strive to contribute positively to the
+            well-being and prosperity of Indigenous Australians, fostering an
+            environment of mutual respect and understanding.
+          </p>
+          <h2 className="text-center text-xl md:text-2xl lg:text-3xl font-semibold text-black mb-4 poppins-bold">
             Our Comprehensive Cleaning Services
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
@@ -40,9 +69,6 @@ const About = () => {
                 Tailored cleaning solutions for businesses of all sizes,
                 ensuring a pristine and productive workplace.
               </p>
-              <p className="text-gray-700 font-semibold">
-                Certifications: ISO 9001, ISO 14001
-              </p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-bold text-black mb-2">
@@ -51,9 +77,6 @@ const About = () => {
               <p className="text-gray-700 mb-2">
                 Specialized cleaning services that maintain a clean, safe, and
                 welcoming office environment.
-              </p>
-              <p className="text-gray-700 font-semibold">
-                Certifications: ISO 9001, ISO 14001
               </p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-md">
@@ -64,9 +87,6 @@ const About = () => {
                 Professional window cleaning for crystal-clear views and
                 improved building aesthetics.
               </p>
-              <p className="text-gray-700 font-semibold">
-                Certifications: ISO 9001
-              </p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-bold text-black mb-2">
@@ -75,9 +95,6 @@ const About = () => {
               <p className="text-gray-700 mb-2">
                 Powerful cleaning methods that remove stubborn dirt and grime
                 from various surfaces, enhancing their appearance and longevity.
-              </p>
-              <p className="text-gray-700 font-semibold">
-                Certifications: ISO 9001, ISO 14001
               </p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-md">
@@ -88,9 +105,6 @@ const About = () => {
                 Expert floor maintenance to restore the shine, durability, and
                 cleanliness of your floors.
               </p>
-              <p className="text-gray-700 font-semibold">
-                Certifications: ISO 9001
-              </p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-bold text-black mb-2">
@@ -99,9 +113,6 @@ const About = () => {
               <p className="text-gray-700 mb-2">
                 Deep cleaning techniques that rejuvenate tile surfaces and
                 restore the original look of grout lines.
-              </p>
-              <p className="text-gray-700 font-semibold">
-                Certifications: ISO 9001
               </p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-md">
@@ -112,9 +123,6 @@ const About = () => {
                 Effective cleaning services for footpaths, car parks, and other
                 hard surfaces, ensuring they remain clean and safe.
               </p>
-              <p className="text-gray-700 font-semibold">
-                Certifications: ISO 9001
-              </p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-bold text-black mb-2">
@@ -123,9 +131,6 @@ const About = () => {
               <p className="text-gray-700 mb-2">
                 Eco-friendly graffiti removal solutions that restore the beauty
                 of your property without harming the environment.
-              </p>
-              <p className="text-gray-700 font-semibold">
-                Certifications: ISO 14001, GECA
               </p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-md">
@@ -136,20 +141,26 @@ const About = () => {
                 Comprehensive carpet cleaning and restoration services that
                 extend the life of your carpets and enhance indoor air quality.
               </p>
-              <p className="text-gray-700 font-semibold">
-                Certifications: ISO 9001, NSW Health Cleaning Service Standards
-              </p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-md">
+              <h3 className="text-xl font-bold text-black mb-2">Restoration</h3>
+              <p className="text-gray-700 mb-2">
+                At Seynar, we provide professional mould remediation services
+                designed to protect your property and health. Our experienced
+                team uses advanced techniques and eco-friendly products to
+                ensure that your space is free from mould and safe for
+                occupancy.
+              </p>
+            </div>
+
+            <div className="bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-bold text-black mb-2">
-                Mould Remediation
+                Waste Management
               </h3>
               <p className="text-gray-700 mb-2">
-                Safe and thorough mould removal to ensure a healthy, mould-free
-                indoor environment.
-              </p>
-              <p className="text-gray-700 font-semibold">
-                Certifications: ISO 14001, NSW Health Cleaning Service Standards
+                Implement efficient waste management with eco-friendly
+                practices, recycling, proper disposal, safety adherence, and
+                sustainability focus, ensuring clean and responsible operations.
               </p>
             </div>
           </div>

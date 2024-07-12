@@ -16,30 +16,6 @@ import BlackLine from "../shared/BlackLine";
 
 const steamCleaningSections = [
   {
-    icon: <FaTint />,
-    title: "Carpet Steam Cleaning",
-    description:
-      "Deeply penetrates carpet fibers to remove stubborn stains and allergens.",
-  },
-  {
-    icon: <FaCouch />,
-    title: "Upholstery Cleaning",
-    description:
-      "Cleans and refreshes sofas, chairs, and drapes using high-temperature steam.",
-  },
-  {
-    icon: <FaTh />,
-    title: "Tile and Grout Steam Cleaning",
-    description:
-      "Effectively removes grime and mold from tile surfaces and grout lines.",
-  },
-  {
-    icon: <FaBroom />,
-    title: "Hard Floor Steam Cleaning",
-    description:
-      "Safely cleans hardwood, vinyl, and laminate floors without harsh chemicals.",
-  },
-  {
     icon: <FaLeaf />,
     title: "Eco-Friendly Solutions",
     description:
@@ -65,7 +41,7 @@ const steamCleaningSections = [
   },
   {
     icon: <FaRoad />,
-    title: "Driveways and Parking Lots",
+    title: "Driveways and Car Parks",
     description:
       "Cleans oil stains, dirt, and debris from concrete and asphalt surfaces, enhancing curb appeal.",
   },
@@ -106,7 +82,7 @@ const SteamCleaning = () => {
 
       <div className="container text-black mx-auto p-4 poppins-regular">
         <h2 className="text-center text-2xl md:text-3xl lg:text-4xl poppins-bold mb-8">
-          Steam Cleaning, Graffiti Removal, and High-Pressure Cleaning at Seynar
+          Steam Cleaning, Graffiti Removal, and High-Pressure Cleaning
         </h2>
         <p className="text-center">
           At Seynar, we specialize in delivering exceptional steam cleaning,

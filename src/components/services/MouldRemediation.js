@@ -6,15 +6,22 @@ import {
   FaLeaf,
   FaRecycle,
   FaSplotch,
+  FaFire,
 } from "react-icons/fa";
 import BlackLine from "../shared/BlackLine";
 
 const mouldRemediationSections = [
   {
     icon: <FaSplotch />,
-    title: "Mould Remediation",
+    title: "Restoration",
     description:
       "• Identification and Assessment: We begin with a thorough assessment to identify the source and extent of mould growth.\n• Containment and Removal: Our team uses controlled procedures to contain the mould and prevent its spread during removal.\n• Air Filtration and Cleaning: High-efficiency air filtration devices are used to cleanse the air of mould spores and other contaminants.\n• Restoration: Affected areas are restored to their original condition using eco-friendly materials and practices.",
+  },
+  {
+    icon: <FaFire />,
+    title: "Disaster Management",
+    description:
+      "At Seynar, we offer specialized disaster management services to help you recover swiftly and effectively from emergencies such as fires. Our dedicated team is trained to handle the complexities of fire damage restoration, including debris removal, soot and smoke cleanup, and structural repairs. We use advanced equipment and techniques to assess the extent of the damage and develop a comprehensive restoration plan. Our focus on safety and environmental responsibility",
   },
   {
     icon: <FaRecycle />,
@@ -38,7 +45,7 @@ const mouldRemediationSections = [
     icon: <FaCog />,
     title: "Meeting Australian Standards",
     description:
-      "Seynar is dedicated to helping our customers achieve and maintain relevant Australian cleaning standards. Our services comply with the following certifications:\n• ISO 14001: Environmental Management Systems\n• AS/NZS 4801: Occupational Health and Safety Management Systems\n• ISO 9001: Quality Management Systems\n• GECA (Good Environmental Choice Australia): Certification for environmentally preferable products and services\n• NSW Health Cleaning Service Standards: Compliance with state health and hygiene standards.",
+      "Commitment to Australian Cleaning Standards Seynar, we are committed to upholding the highest Australian cleaning standards to ensure exceptional service and quality assurance for our clients. By strictly adhering to industry regulations, we guarantee that our cleaning practices are not only effective but also environmentally responsible and safe. This dedication to compliance reflects our ongoing commitment to excellence, allowing us to provide services that meet and exceed our clients' expe",
   },
   {
     icon: <FaCheckCircle />,
@@ -58,8 +65,8 @@ const MouldRemediation = () => {
           className="w-full h-[400px] md:h-[500px] object-cover rounded-lg shadow-lg"
         />
         <div className="absolute inset-0 flex flex-col items-center justify-center text-white text-3xl bg-opacity-50 p-4 rounded-lg poppins-bold">
-          <h1 className="2xl:text-5xl md:text-3xl text-2xl">
-            MOULD REMEDIATION
+          <h1 className="2xl:text-5xl md:text-3xl text-2xl uppercase">
+            Restoration
           </h1>
           <div className="2xl:w-[800px] md:w-[600px] w-80 h-1 bg-white mt-4 mb-4" />
         </div>
@@ -67,8 +74,8 @@ const MouldRemediation = () => {
 
       <div className="container text-black mx-auto p-4 poppins-regular">
         <h2 className="text-center text-2xl md:text-3xl lg:text-4xl poppins-bold mb-8">
-          Mould Remediation, Water Damage Remediation, and Carpet Restoration at
-          Seynar
+          Restoration, Disaster Management, Water Damage Remediation, and Carpet
+          Restoration
         </h2>
         <p className="text-center">
           At Seynar, we provide professional mould remediation services designed

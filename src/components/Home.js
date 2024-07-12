@@ -11,6 +11,7 @@ import {
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import ServicesList from "./home/ServiceList";
+import BlackLine from "./shared/BlackLine";
 
 const Home = () => {
   const navigate = useNavigate();
@@ -66,8 +67,8 @@ const Home = () => {
 
   const images = [
     "/slides/slide3.jpg",
-    "/slides/slide1.jpg",
     "/slides/slide2.jpeg",
+    "/slides/slide1.jpg",
   ];
 
   const sections = [
@@ -105,7 +106,7 @@ const Home = () => {
             <img
               src={image}
               alt={`Slide ${index + 1}`}
-              className="w-full h-[400px] md:h-[500px] object-cover rounded-lg shadow-lg"
+              className="w-full h-[400px] md:h-[500px] 2xl:h-[600px] object-cover rounded-lg shadow-lg"
             />
             <div className="absolute inset-0 flex flex-col items-center justify-center text-white text-3xl bg-opacity-50 p-4 rounded-lg poppins-bold ">
               <h1 className="2xl:text-5xl md:text-3xl text-2xl">
@@ -144,24 +145,7 @@ const Home = () => {
           </motion.div>
         ))}
       </div>
-      <div className="bg-black text-white py-10 px-4 md:px-10 lg:px-20 flex flex-col items-center">
-        <h2 className="text-xl md:text-3xl lg:text-4xl poppins-bold text-center">
-          READY TO GET STARTED?
-        </h2>
-        <p className="mt-4 text-center text-xs md:text-base lg:text-lg poppins-regular">
-          Enter your details below and we’ll get straight back to you.
-          <br />
-          Don’t worry, our services are 100% guaranteed.
-        </p>
-        <motion.button
-          onClick={() => navigate("/contact")}
-          whileHover={{ scale: 1.1 }}
-          whileTap={{ scale: 0.9 }}
-          className="mt-6 2xl:px-6 2xl:py-2 px-2 py-1 2xl:text-3xl text-base bg-white text-black rounded-full shadow-md hover:bg-opacity-100 transition duration-300 poppins-bold"
-        >
-          Book Now
-        </motion.button>
-      </div>
+      <BlackLine />
       <ServicesList />
     </div>
   );

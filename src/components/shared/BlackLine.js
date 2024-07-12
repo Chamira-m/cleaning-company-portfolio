@@ -8,10 +8,11 @@ const BlackLine = () => {
   return (
     <div className="bg-black text-white py-10 px-4 md:px-10 lg:px-20 flex flex-col items-center 2xl:mt-20 lg:mt-16 mt-10">
       <h2 className="text-xl md:text-3xl lg:text-4xl poppins-bold text-center">
-        READY TO GET STARTED?
+        Need assistance anytime?
       </h2>
       <p className="mt-4 text-center text-xs md:text-base lg:text-lg poppins-regular">
-        Enter your details below and we’ll get straight back to you.
+        Our team is available 24/7 to respond to your needs and ensure your
+        space stays pristine and professional.
         <br />
         Don’t worry, our services are 100% guaranteed.
       </p>

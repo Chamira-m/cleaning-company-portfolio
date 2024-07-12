@@ -1,6 +1,5 @@
 import React from "react";
 import {
-  FaCheckCircle,
   FaCog,
   FaFileAlt,
   FaLeaf,
@@ -46,12 +45,6 @@ const mouldRemediationSections = [
     title: "Meeting Australian Standards",
     description:
       "Commitment to Australian Cleaning Standards Seynar, we are committed to upholding the highest Australian cleaning standards to ensure exceptional service and quality assurance for our clients. By strictly adhering to industry regulations, we guarantee that our cleaning practices are not only effective but also environmentally responsible and safe. This dedication to compliance reflects our ongoing commitment to excellence, allowing us to provide services that meet and exceed our clients' expe",
-  },
-  {
-    icon: <FaCheckCircle />,
-    title: "Why Choose Seynar?",
-    description:
-      "• Expertise and Experience: Our professionals are highly trained and experienced in dealing with all aspects of mould, water damage, and carpet issues.\n• Commitment to Sustainability: We prioritize the use of safe, sustainable products and practices in all our remediation and restoration services.\n• Comprehensive Service Range: From initial assessment to final restoration, Seynar offers a full spectrum of services to address and resolve environmental damage.\n• Certified and Insured: Seynar holds all necessary certifications and insurances for safe and compliant operations.",
   },
 ];
 
@@ -107,6 +100,34 @@ const MouldRemediation = () => {
             </div>
           ))}
         </div>
+      </div>
+      <div className="container text-black mx-auto p-4 mt-16 poppins-regular">
+        <h2 className="text-center text-2xl md:text-3xl lg:text-4xl poppins-bold mb-8">
+          Eco-Friendly Cleaning Solutions
+        </h2>
+        <p className="text-center mb-8">
+          For our premium subscription customers, Seynar exclusively uses
+          eco-friendly products and sustainable cleaning methods. This approach
+          not only ensures a safe and healthy environment for your employees but
+          also supports your company’s commitment to sustainability.
+        </p>
+      </div>
+
+      <div className="container text-black mx-auto p-4 mb-16 mt-4 poppins-regular">
+        <h2 className="text-center text-2xl md:text-3xl lg:text-4xl poppins-bold mb-8">
+          Why Choose Seynar for Commercial Cleaning?
+        </h2>
+        <p className="text-center mb-8">
+          Expertise and Experience: Our team comprises highly skilled
+          professionals with extensive experience in commercial cleaning
+          services. Environmental Stewardship: We prioritize environmental
+          protection and integrate sustainable practices into every aspect of
+          our services. Diverse Service Offerings: From office cleaning to
+          high-pressure cleaning, we provide a comprehensive range of services
+          tailored to your specific needs. Innovative Solutions: We are
+          committed to continuous improvement, constantly seeking out new and
+          innovative methods to enhance our services and promote sustainability.
+        </p>
       </div>
       <BlackLine />
 

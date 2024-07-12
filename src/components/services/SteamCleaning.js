@@ -1,9 +1,5 @@
 import React from "react";
 import {
-  FaTint,
-  FaCouch,
-  FaTh,
-  FaBroom,
   FaLeaf,
   FaPaintRoller,
   FaBuilding,
@@ -50,18 +46,6 @@ const steamCleaningSections = [
     title: "Patios and Decks",
     description:
       "Revitalizes outdoor living areas by removing built-up grime and weather stains.",
-  },
-  {
-    icon: <FaHome />,
-    title: "Benefits of Our Cleaning Services",
-    description:
-      "•	Eco-Friendly: All our services use eco-conscious practices, focusing on minimizing environmental impact while delivering powerful cleaning results.\n •	Allergen Reduction: Steam cleaning improves indoor air quality by removing allergens such as dust mites and pet dander.\n •	Deep and Effective Cleaning: Our methods penetrate deep into surfaces, offering a thorough clean that traditional methods cannot match.\n •	Versatility: Safe and effective across a wide range of surfaces, ensuring comprehensive care for your property.\n • For premium subscription customers, Seynar commits to using only eco-friendly products and sustainable practices. Our advanced equipment and techniques ensure high-efficiency cleaning with minimal environmental impact.\n • Recognizing the diverse needs of our clients, Seynar offers tailored cleaning plans. Whether you require routine maintenance or a one-time deep clean, our team is ready to provide solutions that align with your specific requirements. ",
-  },
-  {
-    icon: <FaCheckCircle />,
-    title: "Why Choose Seynar?",
-    description:
-      "• Expertise and Experience: Our team of cleaning professionals brings years of industry experience to every project.\n •	Sustainability Commitment: We are dedicated to using methods and products that are safe for the environment.\n • Advanced Technology: We employ the latest in cleaning technology to ensure superior cleanliness and preservation of surfaces.\n • •	Certified and Insured: Seynar adheres to the highest standards of quality and safety, providing peace of mind for our clients.",
   },
 ];
 
@@ -115,6 +99,45 @@ const SteamCleaning = () => {
             </div>
           ))}
         </div>
+      </div>
+
+      <div className="container text-black mx-auto p-4 mb-16 mt-16 poppins-regular">
+        <h2 className="text-center text-2xl md:text-3xl lg:text-4xl poppins-bold mb-8">
+          Benefits of Our Cleaning Services
+        </h2>
+        <p className="text-center mb-8">
+          • Eco-Friendly: All our services use eco-conscious practices, focusing
+          on minimizing environmental impact while delivering powerful cleaning
+          results. Allergen Reduction: Steam cleaning improves indoor air
+          quality by removing allergens such as dust mites and pet dander. Deep
+          and Effective Cleaning: Our methods penetrate deep into surfaces,
+          offering a thorough clean that traditional methods cannot match.
+          Versatility: Safe and effective across a wide range of surfaces,
+          ensuring comprehensive care for your property. For premium
+          subscription customers, Seynar commits to using only eco-friendly
+          products and sustainable practices. Our advanced equipment and
+          techniques ensure high-efficiency cleaning with minimal environmental
+          impact. Recognizing the diverse needs of our clients, Seynar offers
+          tailored cleaning plans. Whether you require routine maintenance or a
+          one-time deep clean, our team is ready to provide solutions that align
+          with your specific requirements.
+        </p>
+      </div>
+
+      <div className="container text-black mx-auto p-4 mb-16 mt-16 poppins-regular">
+        <h2 className="text-center text-2xl md:text-3xl lg:text-4xl poppins-bold mb-8">
+          Why Choose Seynar?
+        </h2>
+        <p className="text-center mb-8">
+          Expertise and Experience: Our team of cleaning professionals brings
+          years of industry experience to every project. Sustainability
+          Commitment: We are dedicated to using methods and products that are
+          safe for the environment. Advanced Technology: We employ the latest in
+          cleaning technology to ensure superior cleanliness and preservation of
+          surfaces. Certified and Insured: Seynar adheres to the highest
+          standards of quality and safety, providing peace of mind for our
+          clients.
+        </p>
       </div>
 
       <BlackLine />

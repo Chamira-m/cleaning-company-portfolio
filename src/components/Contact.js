@@ -168,7 +168,7 @@ const Contact = () => {
           <p className="mb-4 2xl:text-xl lg:text-lg md:text-base text-sm poppins-regular">
             Open today
             <br />
-            09:30 am – 04:00 pm
+            07:00 am – 05:00 pm
           </p>
           <p className="mb-4 2xl:text-xl lg:text-lg md:text-base text-sm poppins-regular">
             These are just our office hours but we are functional 24/7 for your

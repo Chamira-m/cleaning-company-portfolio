@@ -4,10 +4,8 @@ import {
   FaWindowMaximize,
   FaSplotch,
   FaRecycle,
-  FaLeaf,
   FaFileAlt,
   FaCog,
-  FaCheckCircle,
   FaWarehouse,
   FaSchool,
 } from "react-icons/fa";
@@ -32,7 +30,6 @@ const commercialCleaningSections = [
     description:
       "Seynar offers comprehensive warehouse cleaning services to maintain a clean, safe, and efficient workspace. Our services include deep cleaning, high-pressure cleaning, equipment and machinery cleaning, racking and shelving cleaning, and restroom and break area cleaning. We prioritize safety, productivity, and regulatory compliance while using eco-friendly products. Customized plans and premium subscriptions ensure tailored, sustainable solutions. Choose Seynar for expert, reliable warehouse cleaning.",
   },
-
   {
     icon: <FaSchool />,
     title: "School Cleaning",
@@ -58,12 +55,6 @@ const commercialCleaningSections = [
       "Seynar is committed to sustainability. We provide waste management and recycling services to help your business reduce its environmental footprint and comply with relevant regulations.",
   },
   {
-    icon: <FaLeaf />,
-    title: "Eco-Friendly Cleaning Solutions",
-    description:
-      "For our premium subscription customers, Seynar exclusively uses eco-friendly products and sustainable cleaning methods. This approach not only ensures a safe and healthy environment for your employees but also supports your company’s commitment to sustainability.",
-  },
-  {
     icon: <FaFileAlt />,
     title: "Customized Cleaning Plans",
     description:
@@ -74,12 +65,6 @@ const commercialCleaningSections = [
     title: "Meeting Australian Standards",
     description:
       "Commitment to Australian Cleaning StandardsAt Seynar, we are committed to upholding the highest Australian cleaning standards to ensure exceptional service and quality assurance for our clients. By strictly adhering to industry regulations, we guarantee that our cleaning practices are not only effective but also environmentally responsible and safe. This dedication to compliance reflects our ongoing commitment to excellence, allowing us to provide services that meet and exceed our clients' expe",
-  },
-  {
-    icon: <FaCheckCircle />,
-    title: "Why Choose Seynar for Commercial Cleaning?",
-    description:
-      "• Expertise and Experience: Our team comprises highly skilled professionals with extensive experience in commercial cleaning services.\n• Environmental Stewardship: We prioritize environmental protection and integrate sustainable practices into every aspect of our services.\n• Diverse Service Offerings: From office cleaning to high-pressure cleaning, we provide a comprehensive range of services tailored to your specific needs.\n• Innovative Solutions: We are committed to continuous improvement, constantly seeking out new and innovative methods to enhance our services and promote sustainability.",
   },
 ];
 
@@ -118,7 +103,7 @@ const CommercialCleaning = () => {
           Our Commercial Cleaning Services
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-8">
-          {commercialCleaningSections.map((section, index) => (
+          {commercialCleaningSections.slice(0, 7).map((section, index) => (
             <div
               key={index}
               className="bg-white text-left p-6 rounded-lg shadow-lg"
@@ -136,6 +121,36 @@ const CommercialCleaning = () => {
           ))}
         </div>
       </div>
+
+      <div className="container text-black mx-auto p-4 mt-16 poppins-regular">
+        <h2 className="text-center text-2xl md:text-3xl lg:text-4xl poppins-bold mb-8">
+          Eco-Friendly Cleaning Solutions
+        </h2>
+        <p className="text-center mb-8">
+          For our premium subscription customers, Seynar exclusively uses
+          eco-friendly products and sustainable cleaning methods. This approach
+          not only ensures a safe and healthy environment for your employees but
+          also supports your company’s commitment to sustainability.
+        </p>
+      </div>
+
+      <div className="container text-black mx-auto p-4 mb-16 mt-4 poppins-regular">
+        <h2 className="text-center text-2xl md:text-3xl lg:text-4xl poppins-bold mb-8">
+          Why Choose Seynar for Commercial Cleaning?
+        </h2>
+        <p className="text-center mb-8">
+          Expertise and Experience: Our team comprises highly skilled
+          professionals with extensive experience in commercial cleaning
+          services. Environmental Stewardship: We prioritize environmental
+          protection and integrate sustainable practices into every aspect of
+          our services. Diverse Service Offerings: From office cleaning to
+          high-pressure cleaning, we provide a comprehensive range of services
+          tailored to your specific needs. Innovative Solutions: We are
+          committed to continuous improvement, constantly seeking out new and
+          innovative methods to enhance our services and promote sustainability.
+        </p>
+      </div>
+
       <BlackLine />
 
       <div className="container text-black mx-auto p-4 mb-16 mt-16 poppins-regular">

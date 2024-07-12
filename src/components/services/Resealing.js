@@ -39,17 +39,6 @@ const resealingSections = [
       \nOur premium subscription customers benefit from the use of eco-friendly products, ensuring a safe and environmentally responsible cleaning process.
     `,
   },
-  {
-    icon: <FaLeaf />,
-    title: "Why Choose Seynar?",
-    description: `
-      • Expertise and Experience: Our team comprises highly skilled professionals with extensive experience in floor care and cleaning services.
-      \n• Environmental Stewardship: We prioritize environmental protection and integrate sustainable practices into every aspect of our services.
-      \n• Quality Assurance: We adhere to relevant Australian cleaning standards and certifications, ensuring the highest level of service quality.
-      \n• Eco-Friendly Options: With our premium subscription, you can opt for exclusively eco-friendly cleaning products.
-      \nBy choosing Seynar, you can trust that your floors are in capable hands. Contact us today to learn more about our services and how we can help you maintain beautiful, clean, and sustainable floors.
-    `,
-  },
 ];
 
 const Resealing = () => {
@@ -105,6 +94,34 @@ const Resealing = () => {
             </div>
           ))}
         </div>
+      </div>
+      <div className="container text-black mx-auto p-4 mt-16 poppins-regular">
+        <h2 className="text-center text-2xl md:text-3xl lg:text-4xl poppins-bold mb-8">
+          Eco-Friendly Cleaning Solutions
+        </h2>
+        <p className="text-center mb-8">
+          For our premium subscription customers, Seynar exclusively uses
+          eco-friendly products and sustainable cleaning methods. This approach
+          not only ensures a safe and healthy environment for your employees but
+          also supports your company’s commitment to sustainability.
+        </p>
+      </div>
+
+      <div className="container text-black mx-auto p-4 mb-16 mt-4 poppins-regular">
+        <h2 className="text-center text-2xl md:text-3xl lg:text-4xl poppins-bold mb-8">
+          Why Choose Seynar for Commercial Cleaning?
+        </h2>
+        <p className="text-center mb-8">
+          Expertise and Experience: Our team comprises highly skilled
+          professionals with extensive experience in commercial cleaning
+          services. Environmental Stewardship: We prioritize environmental
+          protection and integrate sustainable practices into every aspect of
+          our services. Diverse Service Offerings: From office cleaning to
+          high-pressure cleaning, we provide a comprehensive range of services
+          tailored to your specific needs. Innovative Solutions: We are
+          committed to continuous improvement, constantly seeking out new and
+          innovative methods to enhance our services and promote sustainability.
+        </p>
       </div>
       <BlackLine />
 

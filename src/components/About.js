@@ -31,7 +31,7 @@ const About = () => {
           <h2 className="text-center text-xl md:text-2xl lg:text-3xl font-semibold text-black mb-4 poppins-bold">
             Honoring First Nations Culture
           </h2>
-          <div className="flex justify-center space-x-8 mb-1">
+          <div className="flex justify-center space-x-8 mb-3">
             <img
               src="/about/aboriginal.png"
               alt="image1"

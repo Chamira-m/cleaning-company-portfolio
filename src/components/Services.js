@@ -26,8 +26,7 @@ const services = [
   },
 
   {
-    title:
-      "Mould Remediation, Water Damage Remediation, and Carpet Restoration",
+    title: "Restoration, Water Damage Remediation, and Carpet Restoration",
     description:
       "Restore properties efficiently, using advanced techniques and eco-friendly products. Address water damage, mold, and more with professionalism and expertise.",
     image: "/services/mould1.jpg",

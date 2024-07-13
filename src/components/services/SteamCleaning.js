@@ -6,7 +6,6 @@ import {
   FaRoad,
   FaHome,
   FaShieldAlt,
-  FaCheckCircle,
 } from "react-icons/fa";
 import BlackLine from "../shared/BlackLine";
 

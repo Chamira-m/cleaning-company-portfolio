@@ -1,5 +1,5 @@
 import React from "react";
-import { FaBroom, FaTint, FaFillDrip, FaLeaf } from "react-icons/fa";
+import { FaBroom, FaTint, FaFillDrip } from "react-icons/fa";
 import BlackLine from "../shared/BlackLine";
 
 const resealingSections = [
@@ -109,7 +109,7 @@ const Resealing = () => {
 
       <div className="container text-black mx-auto p-4 mb-16 mt-4 poppins-regular">
         <h2 className="text-center text-2xl md:text-3xl lg:text-4xl poppins-bold mb-8">
-          Why Choose Seynar for Commercial Cleaning?
+          Why Choose Seynar?
         </h2>
         <p className="text-center mb-8">
           Expertise and Experience: Our team comprises highly skilled

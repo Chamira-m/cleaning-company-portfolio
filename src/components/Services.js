@@ -8,21 +8,21 @@ const services = [
     description:
       "Follow safety protocols, use PPE and eco-friendly products, perform detailed cleaning tasks, maintain professionalism, seek client feedback, and engage in ongoing training.",
     image: "/services/office1.jpeg",
-    nav: "/office",
+    nav: "/office-cleaning",
   },
   {
     title: "Commercial Cleaning",
     description:
       "Professional commercial cleaning services with eco-friendly products, detailed attention, safety adherence, customized plans, and ongoing training for superior cleanliness.",
     image: "/services/commercial1.jpeg",
-    nav: "/CommrcialCleaning",
+    nav: "/commercial-cleaning",
   },
   {
     title: "High-Pressure Cleaning",
     description:
       "Deliver thorough, efficient cleaning using high-pressure techniques, adhere to safety protocols, use eco-friendly products, and maintain professionalism",
     image: "/services/steam1.jpeg",
-    nav: "/SteamCleaning",
+    nav: "/high-pressure-cleaning",
   },
 
   {
@@ -30,7 +30,7 @@ const services = [
     description:
       "Restore properties efficiently, using advanced techniques and eco-friendly products. Address water damage, mold, and more with professionalism and expertise.",
     image: "/services/mould1.jpg",
-    nav: "/MouldRemediation",
+    nav: "/restoration",
   },
 
   {
@@ -38,7 +38,7 @@ const services = [
     description:
       "Restore surfaces with thorough strip and seal, eco-friendly products, and advanced techniques. Ensure spotless hard floors and pristine tiles.",
     image: "/services/resealing1.jpeg",
-    nav: "/Resealing",
+    nav: "/resealing",
   },
 ];
 

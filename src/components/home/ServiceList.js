@@ -6,18 +6,18 @@ const ServicesList = () => {
   const navigate = useNavigate();
 
   const services = [
-    { name: "Office Cleaning", path: "/office" },
+    { name: "Office Cleaning", path: "/office-cleaning" },
     { name: "Commercial Cleaning", path: "/commercial-cleaning" },
     {
-      name: "Steam Cleaning",
-      path: "/Steamcleaning",
+      name: "High-Pressure Cleaning",
+      path: "/high-pressure-cleaning",
     },
     {
-      name: "Mould Remediation",
-      path: "/MouldRemediation",
+      name: "Restoration",
+      path: "/restoration",
     },
     {
-      name: "Tile and Grout Cleaning",
+      name: "Floor Strip and Sealing",
       path: "/Resealing",
     },
   ];

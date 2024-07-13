@@ -6,11 +6,10 @@ import Services from "./components/Services";
 import About from "./components/About";
 import OurWork from "./components/OurWork";
 import OfficeCleaning from "./components/services/OfficeCleaning";
-import CommrcialCleaning from "./components/services/CommercialCleaning";
+import CommercialCleaning from "./components/services/CommercialCleaning"; // Corrected here
 import MouldRemediation from "./components/services/MouldRemediation";
 import SteamCleaning from "./components/services/SteamCleaning";
 import Resealing from "./components/services/Resealing";
-
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import "./App.css";
@@ -20,7 +19,6 @@ const App = () => {
   return (
     <Router>
       <ScrollToTop />
-
       <div className="flex flex-col min-h-screen">
         <Header />
         <main className="flex-grow">
@@ -29,15 +27,15 @@ const App = () => {
             <Route path="/services" element={<Services />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
-            <Route path="/office" element={<OfficeCleaning />} />
+            <Route path="/office-cleaning" element={<OfficeCleaning />} />
             <Route path="/ourwork" element={<OurWork />} />
-
-            <Route path="/CommrcialCleaning" element={<CommrcialCleaning />} />
-
-            <Route path="/MouldRemediation" element={<MouldRemediation />} />
-            <Route path="/SteamCleaning" element={<SteamCleaning />} />
-
-            <Route path="/Resealing" element={<Resealing />} />
+            <Route
+              path="/commercial-cleaning"
+              element={<CommercialCleaning />}
+            />
+            <Route path="/restoration" element={<MouldRemediation />} />
+            <Route path="/high-pressure-cleaning" element={<SteamCleaning />} />
+            <Route path="/resealing" element={<Resealing />} />
           </Routes>
         </main>
         <Footer />

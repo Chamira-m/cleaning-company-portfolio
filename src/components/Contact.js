@@ -159,8 +159,8 @@ const Contact = () => {
             Email: admin@seynar.com.au
             <br />
             Telephone: 03 8753 4707
-            {/* <br />
-            Mobile: 04 0923 4022  */}
+            <br />
+            Mobile: 04 0923 4022
           </p>
           <p className="mb-4 2xl:text-2xl lg:text-xl md:text-lg text-base poppins-bold">
             Office Hours:

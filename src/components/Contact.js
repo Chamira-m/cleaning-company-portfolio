@@ -157,10 +157,10 @@ const Contact = () => {
           </p>
           <p className="mb-4 2xl:text-xl lg:text-lg md:text-base text-sm poppins-regular">
             Email: admin@seynar.com.au
-            {/* <br />
-            Telephone: 03 8774 0777 */}
             <br />
-            Mobile: 04 0923 4022
+            Telephone: 03 8753 4707
+            {/* <br />
+            Mobile: 04 0923 4022  */}
           </p>
           <p className="mb-4 2xl:text-2xl lg:text-xl md:text-lg text-base poppins-bold">
             Office Hours:
